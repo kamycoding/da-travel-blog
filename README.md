@@ -3,3 +3,4 @@ Travel Blog group projevt for DA
 
 ## Test Team
 - Kamyar
+- Max
