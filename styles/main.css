@@ -144,3 +144,23 @@
   font-weight: 700;
   src: url('./assets/fonts/palanquin-dark-v17-devanagari_latin_latin-ext-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+.header_section {
+  width: 100%;
+  background-color: var(--color_primary_green);
+
+  display: flex;
+  align-items: center;
+  padding: 32px 146px;
+  gap: 102px;
+}
+
+.header_links{
+  display: flex;
+  gap: 72px;
+ 
+  color: var(--color_white);
+  font-family: 'Palanquin';
+  font-weight: 400;
+  font-size: 1rem;
+}
