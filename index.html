@@ -13,9 +13,8 @@
   <body>
     <header>
       <div class="header_section">
-        
         <div>
-          <img src="assets\icons\logo 03 1.svg" alt="Blog Logo">
+          <img src="assets\icons\logo 03 1.svg" alt="Blog Logo" />
         </div>
         <div>
           <ol class="header_links">
@@ -26,7 +25,150 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- FAQ Section -->
+      <section class="faq_section">
+        <div class="faq_container">
+          <div class="faq_heading">
+            <img src="./assets/icons/live_help.svg" alt="" aria-hidden="true" />
+            <h2>FAQ</h2>
+          </div>
+
+          <div class="faq_list">
+            <!-- Article 1 -->
+            <article class="faq_item">
+              <button
+                class="faq_question"
+                type="button"
+                id="faq-question-1"
+                aria-expanded="false"
+                aria-controls="faq-answer-1"
+              >
+                <span class="faq_question_text">
+                  What’s the story behind my travel blog?
+                </span>
+                <span class="faq_icon" aria-hidden="true">
+                  <img src="./assets/icons/arrow_forward_ios.svg" alt="" />
+                </span>
+              </button>
+              <div
+                class="faq_answer"
+                id="faq-answer-1"
+                hidden
+                role="region"
+                aria-labelledby="faq-question-1"
+              >
+                <p>
+                  I started this blog as a way to document my travels and keep
+                  memories in one place. Over time, it turned into something
+                  bigger a space where I can share real experiences, tips, and
+                  honest insights with others who love exploring the world.
+                </p>
+              </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="faq_item">
+              <button
+                class="faq_question"
+                type="button"
+                id="faq-question-2"
+                aria-expanded="false"
+                aria-controls="faq-answer-2"
+              >
+                <span class="faq_question_text">
+                  How do I plan, document, and share my travels?
+                </span>
+                <span class="faq_icon" aria-hidden="true">
+                  <img src="./assets/icons/arrow_forward_ios.svg" alt="" />
+                </span>
+              </button>
+              <div
+                class="faq_answer"
+                id="faq-answer-2"
+                hidden
+                role="region"
+                aria-labelledby="faq-question-2"
+              >
+                <p>
+                  I usually start with a rough plan, but I leave room for
+                  spontaneity. While traveling, I take notes, photos, and short
+                  videos to capture the experience. Later, I turn those into
+                  blog posts that combine practical tips with personal stories.
+                </p>
+              </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="faq_item">
+              <button
+                class="faq_question"
+                type="button"
+                id="faq-question-3"
+                aria-expanded="false"
+                aria-controls="faq-answer-3"
+              >
+                <span class="faq_question_text">
+                  How can brands, companies, or fellow creators collaborate with
+                  me or get in touch?
+                </span>
+                <span class="faq_icon" aria-hidden="true">
+                  <img src="./assets/icons/arrow_forward_ios.svg" alt="" />
+                </span>
+              </button>
+              <div
+                class="faq_answer"
+                id="faq-answer-3"
+                hidden
+                role="region"
+                aria-labelledby="faq-question-3"
+              >
+                <p>
+                  If you’re interested in working together, feel free to reach
+                  out via the contact page or email. I’m open to collaborations
+                  that align with my style and values, including content
+                  creation, partnerships, and creative projects.
+                </p>
+              </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="faq_item">
+              <button
+                class="faq_question"
+                type="button"
+                id="faq-question-4"
+                aria-expanded="false"
+                aria-controls="faq-answer-4"
+              >
+                <span class="faq_question_text">
+                  How can readers support this blog and the work behind it?
+                </span>
+                <span class="faq_icon" aria-hidden="true">
+                  <img src="./assets/icons/arrow_forward_ios.svg" alt="" />
+                </span>
+              </button>
+              <div
+                class="faq_answer"
+                id="faq-answer-4"
+                hidden
+                role="region"
+                aria-labelledby="faq-question-4"
+              >
+                <p>
+                  The best way to support is simply by reading, sharing posts,
+                  and engaging with the content. If you want to go a step
+                  further, you can recommend the blog to others or collaborate
+                  on ideas that help it grow.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
+    <!-- script -->
+    <script src="./js/faq.js"></script>
   </body>
 </html>
