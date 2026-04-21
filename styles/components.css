@@ -1,1 +1,9 @@
 /* shared components go here */
+
+:root {
+  --color_primary_green: #4ea487;
+  --color_primary_gelb: #f1c953;
+  --color_secondary_braun: #54370d;
+  --color_text_gray: #737373;
+  --color_white: #ffffff;
+}
