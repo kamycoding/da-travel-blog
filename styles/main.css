@@ -207,8 +207,7 @@
   object-fit: cover;
   z-index: 1;
 
-  animation: hero_img 1s ease-in forwards;
-  animation-delay: 1s;
+  animation: hero_img 0.9s ease-in 1s 1 forwards, hero_img_last 1s ease-out 3s 1 forwards;
 }
 
 @keyframes hero_img {
@@ -218,6 +217,16 @@
 
   100%{
     scale: calc(1.05); transform: translateX(10%);
+  }
+}
+
+@keyframes hero_img_last {
+  0% {
+    scale:calc(1.05); transform: translateX(10%);
+  }
+
+  100%{
+    scale: calc(1.1); transform: translateX(15%);
   }
 }
 
@@ -261,13 +270,14 @@
 
 .hero_overlay_half{
   position: absolute;
+  object-fit: contain;
 
   inset: 0;
   width: 100%;
   height: 100%;
   z-index: 2;
 
-  animation: hero_overlay_half 2s ease-out forwards;
+  animation: hero_overlay_half 2s ease-out forwards, hero_overlay_half_fade 0.9s ease-out 3s 1 forwards;
 }
 
 @keyframes hero_overlay_half {
@@ -276,8 +286,32 @@
   }
 
   100% {
-    transform: translateX(-30%);
+    transform: translateX(-20%);
   }
+}
+
+@keyframes hero_overlay_half_fade{
+  0% {
+    transform: translateX(-20%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+}
+
+.hero_overlay_small{
+  position: absolute;
+
+  object-fit: fill;
+
+  inset: 0;
+  width: 45%;
+  height: 100%;
+  z-index: 3;
+
 }
 
 .hero_text {
@@ -291,18 +325,16 @@
   max-width: 345px;
   text-align: start;
 
-  animation: h1_move 0.9s ease-in-out 1s 1 forwards;
+  animation: text_move 0.9s ease-in-out 1s 1 forwards;
 }
 
-@keyframes h1_move{
+@keyframes text_move{
   0%{
     transform: translate(-50%, -50%);
-    /* transform: translateY(-50%); */
   }
 
   100%{
-    transform: translate(-180%, -50%);
-    /* transform: translateY(-50%); */
+    transform: translate(-185%, -50%);
   }
 }
 
