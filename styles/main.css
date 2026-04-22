@@ -186,6 +186,18 @@
   font-size: 1.5rem;
 }
 
+.header_links img{
+  position: relative;
+  top: -10px;
+}
+
+.header_links a>div{
+  opacity: 0;
+}
+.header_links a:hover>div { 
+  opacity: 1; 
+}
+
 .hero {
   position: relative;
   height: 515px;
