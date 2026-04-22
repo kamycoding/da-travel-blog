@@ -233,8 +233,7 @@
   object-fit: cover;
   z-index: 2;
 
-  animation: hero_overlay 2s ease-in-out forwards;
-  animation-delay: 1s;
+  animation: hero_overlay 0.5s linear 2s 1 forwards;
 }
 
 @keyframes hero_overlay {
@@ -243,21 +242,33 @@
     opacity: 1;
   }
 
+  25% {
+    transform: translateX(-30%);
+    opacity: 0.75;
+    scale: calc(50);
+  }
+
   50% {
-    transform: translateX(-60%);
+    transform: translateX(-40%);
     opacity: 0.5;
     scale: calc(50);
   }
 
   75% {
+    transform: translateX(-60%);
+    opacity: 0.25;
+    scale: calc(50);
+  }
+
+  85% {
     transform: translateX(-80%);
-    opacity: 0.5;
+    opacity: 0.15;
     scale: calc(50);
   }
 
   100% {
     transform: translateX(-100%);
-    opacity: 0.5;
+    opacity: 0;
     scale: calc(50);
   }
 }
@@ -269,7 +280,7 @@
   height: 100%;
   z-index: 2;
 
-  animation: hero_overlay_half 2s ease-out forwards, hero_overlay_half_fade 0.9s ease-out 3s 1 forwards;
+  animation: hero_overlay_half 1s ease-out 2.5s forwards, hero_overlay_half_fade 0.9s ease-out 4.5s 1 forwards;
 }
 
 @keyframes hero_overlay_half {
@@ -312,7 +323,7 @@
   max-width: 345px;
   text-align: start;
 
-  animation: text_move 0.9s ease-in-out 1s 1 forwards;
+  animation: text_move 1.5s ease-in-out 2s 1 forwards;
 }
 
 @keyframes text_move{
