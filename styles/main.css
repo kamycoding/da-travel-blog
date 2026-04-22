@@ -764,3 +764,34 @@
   align-self: center;
   margin-top: 32px;
 }
+
+/* =========================
+   Footer Section
+========================= */
+
+.footer_section{
+  width: 100%;
+  background-color: var(--color_primary_green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 120px;
+
+  color: var(--color_white);
+  font-family: "Palanquin";
+  font-size: 1rem;
+}
+
+.footer_left{
+  display: flex;
+  gap: 72px;
+}
+
+.footer_left img{
+  transform: translateY(-3px);
+}
+
+.footer_right{
+  display: flex;
+  gap: 16px;
+}
