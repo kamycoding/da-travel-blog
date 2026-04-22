@@ -40,88 +40,70 @@
   <body>
     <!-- Header -->
     <header>
-      <nav class="header_section">
-        <div>
-          <img src="./assets/icons/logo 03 1.svg" alt="Blog Logo" />
-        </div>
-        <div>
-          <ol class="header_links">
-            <li>
-              <a class="highlights_link" href="www.google.com"
-                >Highlights
-                <div>
-                  <img
-                    src="./assets/effects/hover_highlights.svg"
-                    alt=""
-                  /></div
-              ></a>
-            </li>
-            <li>
-              <a class="faq_link" href="www.facebook.com"
-                >FAQ
-                <div>
-                  <img src="./assets/effects/hover_faq.svg" alt="" /></div
-              ></a>
-            </li>
-            <li>
-              <a class="contact_link" href="www.instagram.com"
-                >Contact
-                <div>
-                  <img src="./assets/effects/hover_contact.svg" alt="" /></div
-              ></a>
-            </li>
-          </ol>
+      <nav class="header_section" aria-label="Main navigation">
+        <div class="header_inner">
+          <a href="#" class="header_logo" aria-label="Go to homepage">
+            <img src="./assets/icons/logo 03 1.svg" alt="Blog Logo" />
+          </a>
+          <ul class="header_links">
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </nav>
 
-      <section class="hero">
+      <!-- Hero Section -->
+      <section class="hero" aria-label="Hero section">
         <div class="hero_bg">
           <img
             class="hero_img"
             src="./assets/img/hero-bg.jpg"
-            alt="Background Couple with hot air balloon"
+            alt="Couple with hot air balloons in Cappadocia"
           />
           <img
             class="hero_overlay"
             src="./assets/img/Hero_overlay.png"
-            alt="Overlay Background"
-          />
-          <img
-            class="hero_overlay_half"
-            src="./assets/img/hero_overlay_half.png"
-            alt="Overlay Backround half"
-          />
-          <img
-            class="hero_overlay_small"
-            src="./assets/img/hero_overlay_small.png"
-            alt="Overlay Backround small"
+            alt=""
+            aria-hidden="true"
           />
         </div>
-        <div class="hero_text">
-          <h1>Cappadocia</h1>
-          <p>
-            From sunrise balloons to hidden cave dwellings, every moment feels
-            unreal in the best way.
-          </p>
-        </div>
-        <div class="travel_badge">
-          <div class="travel_badge__text_wrap">
-            <img
-              src="./assets/icons/text_circle.svg"
-              alt=""
-              class="travel_badge__text"
-              aria-hidden="true"
-            />
+
+        <img
+          class="hero_overlay_small"
+          src="./assets/img/hero_overlay_small.png"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <div class="hero_inner">
+          <div class="hero_text">
+            <h1>Cappadocia</h1>
+            <p>
+              From sunrise balloons to hidden cave dwellings, every moment feels
+              unreal in the best way.
+            </p>
           </div>
 
-          <img
-            src="./assets/icons/Flag_orb_Turkey.svg"
-            alt="Turkey flag"
-            class="travel_badge__flag"
-          />
+          <div class="travel_badge">
+            <div class="travel_badge__text_wrap">
+              <img
+                src="./assets/icons/text_circle.svg"
+                alt=""
+                class="travel_badge__text"
+                aria-hidden="true"
+              />
+            </div>
+            <img
+              src="./assets/icons/Flag_orb_Turkey.svg"
+              alt="Turkey flag"
+              class="travel_badge__flag"
+            />
+          </div>
         </div>
       </section>
     </header>
+
     <main>
       <!-- FAQ Section -->
       <section class="faq_section">

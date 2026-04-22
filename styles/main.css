@@ -170,6 +170,12 @@
 .header_section {
   width: 100%;
   background-color: var(--color_primary_green);
+}
+
+.header_inner {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   padding: 32px 146px;
@@ -186,65 +192,37 @@
   font-size: 1.5rem;
 }
 
-.header_links a:active {
-  color: var(--color_primary_yellow);
-}
-
-.header_links img {
-  position: relative;
-  top: -10px;
-}
-
-.header_links a > div {
-  opacity: 0;
-}
-.header_links a:hover > div {
-  opacity: 1;
-}
-
 .hero {
   position: relative;
   height: 515px;
+  width: 100%;
+}
+
+.hero_inner {
+  position: relative;
   max-width: 1440px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
+  z-index: 5;
+}
+
+.hero_bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
   overflow: hidden;
 }
 
 .hero_img {
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
-
-  animation:
-    hero_img 0.9s ease-in 1s 1 forwards,
-    hero_img_last 0.5s ease-out 3s 1 forwards;
-}
-
-@keyframes hero_img {
-  0% {
-    scale: calc(1);
-    transform: translateX(5%);
-  }
-
-  100% {
-    scale: calc(1.05);
-    transform: translateX(10%);
-  }
-}
-
-@keyframes hero_img_last {
-  0% {
-    scale: calc(1.05);
-    transform: translateX(10%);
-  }
-
-  100% {
-    scale: calc(1.1);
-    transform: translateX(15%);
-  }
 }
 
 .hero_overlay {
@@ -255,105 +233,128 @@
   object-fit: cover;
   z-index: 2;
 
-  animation: hero_overlay 0.5s linear 2s 1 forwards;
+  animation: hero_overlay_out 3.5s ease-in-out 2.5s 1 forwards;
 }
 
-@keyframes hero_overlay {
+@keyframes hero_overlay_out {
   0% {
     transform: translateX(0%);
     opacity: 1;
   }
-
-  25% {
-    transform: translateX(-30%);
-    opacity: 0.75;
-    scale: calc(50);
+  37% {
+    transform: translateX(-55%);
+    opacity: 1;
   }
-
-  50% {
-    transform: translateX(-40%);
-    opacity: 0.5;
-    scale: calc(50);
+  65% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-
-  75% {
-    transform: translateX(-60%);
-    opacity: 0.25;
-    scale: calc(50);
-  }
-
-  85% {
-    transform: translateX(-80%);
-    opacity: 0.15;
-    scale: calc(50);
-  }
-
   100% {
     transform: translateX(-100%);
     opacity: 0;
-    scale: calc(50);
   }
 }
 
 .hero_overlay_half {
   position: absolute;
-  object-fit: contain;
+  inset: 0;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  object-fit: contain;
+  object-position: left center;
+  z-index: 3;
+  transform-origin: left top;
+  transform: translateX(-100%) scale(1);
 
   animation:
-    hero_overlay_half 1s ease-out 2.5s forwards,
-    hero_overlay_half_fade 0.9s ease-out 4.5s 1 forwards;
+    hero_overlay_half_in 3.5s ease-in-out 2.5s 1 forwards,
+    hero_overlay_half_breathe 4s ease-in-out 6.5s infinite;
 }
 
-@keyframes hero_overlay_half {
+@keyframes hero_overlay_half_in {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-100%) scale(1);
   }
-
+  37% {
+    transform: translateX(-45%) scale(1);
+  }
+  65% {
+    transform: translateX(0%) scale(1.08);
+  }
   100% {
-    transform: translateX(-20%);
+    transform: translateX(0%) scale(1.08);
   }
 }
 
-@keyframes hero_overlay_half_fade {
-  0% {
-    transform: translateX(-20%);
-    opacity: 1;
-  }
-
+@keyframes hero_overlay_half_breathe {
+  0%,
   100% {
-    transform: translateX(-50%);
-    opacity: 0;
+    transform: translateX(0%) scale(1.08);
+  }
+  50% {
+    transform: translateX(0%) scale(1.1);
   }
 }
 
 .hero_overlay_small {
   position: absolute;
+  inset: 0 auto 0 0;
   object-fit: fill;
-  width: 45%;
+  width: 40%;
   height: 100%;
   z-index: 3;
+  transform-origin: left top;
+
+  transform: translateX(-100%) scale(1);
+  animation:
+    hero_overlay_small_in 3.5s ease-in-out 2.5s 1 forwards,
+    hero_overlay_small_breathe 4s ease-in-out 6.5s infinite;
+}
+
+@keyframes hero_overlay_small_in {
+  0% {
+    transform: translateX(-100%) scale(1);
+  }
+  37% {
+    transform: translateX(-45%) scale(1);
+  }
+  65% {
+    transform: translateX(0%) scale(1.08);
+  }
+  100% {
+    transform: translateX(0%) scale(1.08);
+  }
+}
+
+@keyframes hero_overlay_small_breathe {
+  0%,
+  100% {
+    transform: translateX(0%) scale(1.08);
+  }
+  50% {
+    transform: translateX(0%) scale(1.1);
+  }
 }
 
 .hero_text {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   top: 50%;
-  left: 50%;
+  left: 42%;
   transform: translate(-50%, -50%);
   max-width: 345px;
   text-align: start;
 
-  animation: text_move 1.5s ease-in-out 2s 1 forwards;
+  animation: text_move 3.5s ease-in-out 2.5s 1 forwards;
 }
 
 @keyframes text_move {
   0% {
     transform: translate(-50%, -50%);
   }
-
+  50% {
+    transform: translate(-185%, -50%);
+  }
   100% {
     transform: translate(-185%, -50%);
   }
@@ -366,15 +367,14 @@
   font-size: 3.75rem;
   color: var(--color_secondary_braun);
 
-  animation: h1 0.5s linear forwards;
+  animation: h1_in 0.5s ease-out 0s 1 both;
 }
 
-@keyframes h1 {
+@keyframes h1_in {
   0% {
-    transform: translateY(100%);
+    transform: translateY(40%);
     opacity: 0;
   }
-
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -388,41 +388,40 @@
   font-size: 1.75rem;
   color: var(--color_secondary_braun);
 
-  animation: p 0.8s linear forwards;
-  animation-delay: 0.7s;
-  animation-fill-mode: backwards;
+  animation: p_in 0.8s ease-out 0.7s 1 both;
 }
 
-@keyframes p {
+@keyframes p_in {
   0% {
     opacity: 0;
+    transform: translateY(10px);
   }
-
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .travel_badge {
-  position: relative;
+  position: absolute;
+  bottom: 11px;
+  left: 363px;
   width: 160px;
   height: 160px;
-  top: 300px;
-  left: 450px;
-  z-index: 4;
-
-  animation: badge 1.5s ease-out 4s 1 forwards;
-  animation-fill-mode: backwards;
+  z-index: 5;
+  animation: badge_in 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 5s 1 both;
 }
 
-@keyframes badge {
+@keyframes badge_in {
   0% {
     transform: translateY(250px);
     opacity: 0;
   }
-
+  60% {
+    opacity: 1;
+  }
   100% {
-    transform: translateY(0px);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -433,12 +432,6 @@
   inset: 0;
   border-radius: 50%;
   background-color: var(--color_primary_green);
-  box-shadow:
-    -0px 0px 1px rgba(3, 7, 18, 0.03),
-    -2px 2px 5px rgba(3, 7, 18, 0.06),
-    -4px 4px 12px rgba(3, 7, 18, 0.08),
-    -7px 7px 22px rgba(3, 7, 18, 0.11),
-    -11px 11px 34px rgba(3, 7, 18, 0.14);
 }
 
 .travel_badge__text_wrap {
@@ -531,7 +524,119 @@
   overflow: hidden;
 }
 
-.faq_item.is_open {
+.faq_question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 14px;
+}
+
+.faq_item.is_open .faq_question {
+  padding-bottom: 12px;
+}
+
+.faq_question_text {
+  color: var(--color_secondary_braun);
+  font-family: "Palanquin", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.faq_icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.faq_icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 220ms ease;
+}
+
+.faq_item.is_open .faq_icon img {
+  transform: rotate(180deg);
+}
+
+.faq_answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 350ms ease,
+    opacity 300ms ease;
+}
+
+.faq_item.is_open .faq_answer {
+  opacity: 1;
+}
+
+.faq_answer p {
+  padding: 4px 10px;
+  margin: 0 14px 16px;
+  color: var(--color_secondary_braun);
+  font-family: "Palanquin", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  background: var(--color_white);
+  border-radius: 5px;
+}
+
+/* =========================
+   FAQ Section
+========================= */
+
+.faq_section {
+  width: 100%;
+  padding: 120px 0;
+}
+
+.faq_container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.faq_heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 48px;
+}
+
+.faq_heading h2 {
+  color: var(--color_primary_green);
+  font-family: "Arima", Arial, sans-serif;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.faq_heading img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.faq_list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.faq_item {
+  width: 100%;
+  background-color: var(--color_primary_yellow);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .faq_question {
