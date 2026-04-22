@@ -186,6 +186,10 @@
   font-size: 1.5rem;
 }
 
+.header_links a:active{
+  color: var(--color_primary_yellow);
+}
+
 .header_links img{
   position: relative;
   top: -10px;
