@@ -163,6 +163,10 @@
     format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* =========================
+   Header Section
+========================= */
+
 .header_section {
   width: 100%;
   background-color: var(--color_primary_green);
@@ -188,7 +192,6 @@
   position: relative;
 
   height: 515px;
-
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
@@ -198,6 +201,7 @@
 
 .hero_img {
   position: absolute;
+
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -206,11 +210,28 @@
 
 .hero_overlay {
   position: absolute;
+
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 2;
+
+  animation: hero_overlay 3s linear forwards;
+}
+
+@keyframes hero_overlay {
+  0% {
+    transform: translateX(0%);
+  }
+
+  60% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .hero_text {
@@ -230,6 +251,21 @@
   font-style: normal;
   font-weight: 700;
   font-size: 3.75rem;
+  color: var(--color_secondary_braun);
+
+  animation: h1 0.5s linear forwards;
+}
+
+@keyframes h1 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .hero_text p {
@@ -237,7 +273,26 @@
   font-style: normal;
   font-weight: 500;
   font-size: 1.75rem;
+  color: var(--color_secondary_braun);
+
+  animation: p 1s linear forwards;
 }
+
+@keyframes p {
+  0%{
+    opacity: 0;
+  }
+
+  75%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+  
+}
+
 
 /* =========================
    FAQ Section
