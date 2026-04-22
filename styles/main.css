@@ -383,8 +383,84 @@
   }
 
   100% {
-  100% {
     opacity: 1;
+  }
+}
+
+.travel_badge {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  top: 300px;
+  left: 450px;
+  z-index: 4;
+
+  animation: badge 1.5s ease-out 4s 1 forwards;
+  animation-fill-mode: backwards;
+}
+
+@keyframes badge {
+  0% {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.travel_badge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background-color: var(--color_primary_green);
+  box-shadow:
+    -0px 0px 1px rgba(3, 7, 18, 0.03),
+    -2px 2px 5px rgba(3, 7, 18, 0.06),
+    -4px 4px 12px rgba(3, 7, 18, 0.08),
+    -7px 7px 22px rgba(3, 7, 18, 0.11),
+    -11px 11px 34px rgba(3, 7, 18, 0.14);
+}
+
+.travel_badge__text_wrap {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 132px;
+  height: 132px;
+}
+
+.travel_badge__text {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 4;
+
+  animation: rotateText 12s linear infinite;
+  transform-origin: center;
+}
+
+.travel_badge__flag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+@keyframes rotateText {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
