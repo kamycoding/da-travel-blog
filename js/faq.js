@@ -14,13 +14,13 @@ faqQuestions.forEach((questionButton) => {
 
       button.setAttribute("aria-expanded", "false");
       item.classList.remove("is_open");
-      answer.hidden = true;
+      answer.style.maxHeight = "0";
     });
 
     if (!isExpanded) {
       questionButton.setAttribute("aria-expanded", "true");
       currentItem.classList.add("is_open");
-      currentAnswer.hidden = false;
+      currentAnswer.style.maxHeight = currentAnswer.scrollHeight + "px";
     }
   });
 });
