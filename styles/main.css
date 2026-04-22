@@ -170,7 +170,6 @@
 .header_section {
   width: 100%;
   background-color: var(--color_primary_green);
-
   display: flex;
   align-items: center;
   padding: 32px 146px;
@@ -180,7 +179,6 @@
 .header_links {
   display: flex;
   gap: 72px;
-
   color: var(--color_white);
   font-family: "Arima";
   font-style: normal;
@@ -190,24 +188,21 @@
 
 .hero {
   position: relative;
-
   height: 515px;
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-
   overflow: hidden;
 }
 
 .hero_img {
   position: absolute;
-
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
 
-  animation: hero_img 0.9s ease-in 1s 1 forwards, hero_img_last 1s ease-out 3s 1 forwards;
+  animation: hero_img 0.9s ease-in 1s 1 forwards, hero_img_last 0.5s ease-out 3s 1 forwards;
 }
 
 @keyframes hero_img {
@@ -232,7 +227,6 @@
 
 .hero_overlay {
   position: absolute;
-
   inset: 0;
   width: 100%;
   height: 100%;
@@ -271,8 +265,6 @@
 .hero_overlay_half{
   position: absolute;
   object-fit: contain;
-
-  inset: 0;
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -304,10 +296,7 @@
 
 .hero_overlay_small{
   position: absolute;
-
   object-fit: fill;
-
-  inset: 0;
   width: 45%;
   height: 100%;
   z-index: 3;
@@ -317,11 +306,9 @@
 .hero_text {
   position: absolute;
   z-index: 3;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   max-width: 345px;
   text-align: start;
 
