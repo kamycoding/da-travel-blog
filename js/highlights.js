@@ -1,39 +1,15 @@
-const highlightSlides = document.querySelectorAll(".highlight_slide");
+const highlightsTrack = document.querySelector(".highlights_track");
 const highlightDots = document.querySelectorAll(".highlights_dot");
-
-const FADE_DURATION = 400;
-let isAnimating = false;
 
 highlightDots.forEach((dot, index) => {
   dot.addEventListener("click", () => {
-    if (isAnimating) return;
-
-    const currentSlide = document.querySelector(".highlight_slide.is-active");
-    const targetSlide = highlightSlides[index];
-    if (currentSlide === targetSlide) return;
-
-    isAnimating = true;
-
-    highlightDots.forEach((d) => d.classList.remove("is-active"));
-    dot.classList.add("is-active");
-
-    currentSlide.style.opacity = "0";
+    highlightsTrack.classList.add("is-hidden");
 
     setTimeout(() => {
-      currentSlide.classList.remove("is-active");
-      currentSlide.style.opacity = "";
-
-      targetSlide.classList.add("is-active");
-      targetSlide.style.opacity = "0";
-
-      void targetSlide.offsetWidth;
-
-      targetSlide.style.opacity = "1";
-
-      setTimeout(() => {
-        targetSlide.style.opacity = "";
-        isAnimating = false;
-      }, FADE_DURATION);
-    }, FADE_DURATION);
+      highlightsTrack.style.transform = `translateX(-${index * 100}%)`;
+      highlightsTrack.classList.remove("is-hidden");
+    }, 120);
+    highlightDots.forEach((d) => d.classList.remove("is-active"));
+    dot.classList.add("is-active");
   });
 });
