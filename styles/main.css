@@ -577,6 +577,8 @@
   overflow: hidden;
   background-color: #d9d9d9;
   border-top-right-radius: 100px;
+  opacity: 1;
+  transition: opacity 400ms ease;
 }
 
 .highlight_slide:not(.is-active) {
