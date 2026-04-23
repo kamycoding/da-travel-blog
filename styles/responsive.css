@@ -1,7 +1,6 @@
 /* responsive styles go here */@media screen and (min-width: 1440px) {
   .header_section {
     padding: 0px max(146px, calc(50% - 720px));
-    padding: 0px;
   }
 
   .hero {
@@ -17,7 +16,6 @@
   }
 
   .footer_section {
-    padding: 0px max(120px, calc(50% - 720px));
-    padding: 0px;
+    padding: 0px max(0px, calc(50% - 720px));
   }
 }

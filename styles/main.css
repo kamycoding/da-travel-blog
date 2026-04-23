@@ -178,7 +178,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 32px 146px;
+  padding: 32px 0px;
   gap: 102px;
 }
 
@@ -924,7 +924,7 @@ top: -10px;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 60px 120px;
+  padding: 60px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
