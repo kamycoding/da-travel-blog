@@ -1,0 +1,93 @@
+.page_hero {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.eyebrow {
+    font-size: 2.5rem;
+    font-family: "Palanquin";
+    font-weight: 600;
+    color: var(--color_primary_green);
+}
+
+.page_hero_left{
+    max-width: 75%;
+}
+
+.page_hero_left h1 {
+    font-size: 4rem;
+    font-family: "Arima";
+    font-weight: 700;
+    color: var(--color_primary_yellow);
+    line-height: 4.5rem;
+}
+
+.page_hero_left p:nth-of-type(2) {
+    font-size: 2rem;
+    font-family: "Palanquin";
+    font-weight: 400;
+    color: var(--color_secondary_braun);
+    line-height: 2.5rem;
+    padding-bottom: 59px;
+}
+
+.page_hero_left_infos{
+    display: flex;
+    gap: 32px;
+}
+
+.page_hero_left_infos > div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 6px;
+    font-family: "Palanquin";
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color_secondary_braun)
+}
+
+.page_hero_right{
+    margin:  16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color_secondary_braun);
+    font-family: "Arima";
+}
+
+.author > h3 {
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+}
+
+.author > p {
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    padding-bottom: 12px;
+    font-weight: 400;
+}
+
+.author > img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: -43px;
+    margin: 16px 0px;
+}
+
+.author_subtext {
+    max-width: 240px;
+    font-family: "Palanquin";
+    font-weight: 400;
+    line-height: 1.25rem;
+}

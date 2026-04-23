@@ -1,5 +1,7 @@
 /* responsive styles go here */
 
+/* Main Responsive */
+
 @media screen and (min-width: 1440px) {
   .header_section {
     padding: 0px max(146px, calc(50% - 720px));
@@ -22,4 +24,10 @@
   .footer_section {
     padding: 0px max(0px, calc(50% - 720px));
   }
+}
+
+/* Article Responsive */
+
+.page_hero{
+    padding: 80px max(120px, calc(50% - 720px));
 }
