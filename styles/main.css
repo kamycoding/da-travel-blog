@@ -564,25 +564,26 @@
   position: relative;
   width: min(100%, 1440px);
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .highlights_track {
   width: 100%;
+  display: flex;
+  transition: opacity 800ms ease;
+}
+
+.highlights_track.is-hidden {
+  opacity: 0;
 }
 
 .highlight_slide {
   position: relative;
   width: 100%;
+  flex-shrink: 0;
   aspect-ratio: 1200 / 533;
   overflow: hidden;
-  background-color: #d9d9d9;
   border-top-right-radius: 100px;
-  opacity: 1;
-  transition: opacity 400ms ease;
-}
-
-.highlight_slide:not(.is-active) {
-  display: none;
 }
 
 .highlight_slide_image {
