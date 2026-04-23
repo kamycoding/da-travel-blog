@@ -1,1 +1,23 @@
-/* responsive styles go here */
+/* responsive styles go here */@media screen and (min-width: 1440px) {
+  .header_section {
+    padding: 0px max(146px, calc(50% - 720px));
+    padding: 0px;
+  }
+
+  .hero {
+    padding: 0px max(120px, calc(50% - 720px));
+  }
+
+  .faq_section {
+    padding: 0px max(120px, calc(50% - 720px));
+  }
+
+  .contact_section {
+    padding: 0px max(120px, calc(50% - 720px));
+  }
+
+  .footer_section {
+    padding: 0px max(120px, calc(50% - 720px));
+    padding: 0px;
+  }
+}
