@@ -360,23 +360,24 @@
   position: absolute;
   z-index: 4;
   top: 50%;
-  left: 42%;
-  transform: translate(-50%, -50%);
+  left: 50%;
   max-width: 345px;
+  width: min(345px, calc(100% - 32px));
   text-align: start;
+  transform: translate(-50%, -50%);
 
-  animation: text_move 3.5s ease-in-out 2.5s 1 forwards;
+  animation: text_move 2s ease-in-out 2.5s 1 both;
 }
 
 @keyframes text_move {
   0% {
+    left: 50%;
     transform: translate(-50%, -50%);
   }
-  50% {
-    transform: translate(-185%, -50%);
-  }
+
   100% {
-    transform: translate(-185%, -50%);
+    left: clamp(16px, 4vw, 20px);
+    transform: translate(0, -50%);
   }
 }
 
@@ -425,8 +426,8 @@
 
 .travel_badge {
   position: absolute;
-  bottom: 11px;
-  left: 415px;
+  bottom: -9%;
+  left: 25%;
   width: 160px;
   height: 160px;
   z-index: 5;
@@ -590,6 +591,7 @@
   height: 100%;
   object-fit: contain;
   transition: transform 220ms ease;
+  transform: rotate(360deg);
 }
 
 .faq_item.is_open .faq_icon img {
