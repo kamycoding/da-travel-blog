@@ -1,4 +1,6 @@
-/* responsive styles go here */@media screen and (min-width: 1440px) {
+/* responsive styles go here */
+
+@media screen and (min-width: 1440px) {
   .header_section {
     padding: 0px max(146px, calc(50% - 720px));
   }
