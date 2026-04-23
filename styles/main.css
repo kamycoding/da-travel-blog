@@ -192,6 +192,23 @@
   font-size: 1.5rem;
 }
 
+.header_links a:active {
+  color: var(--color_primary_yellow);
+}
+
+.header_links img {
+position: relative;
+top: -10px;
+}
+
+.header_links a > div {
+  opacity: 0;
+}
+
+.header_links a:hover > div {
+  opacity: 1;
+}
+
 .hero {
   position: relative;
   height: 515px;
@@ -223,6 +240,13 @@
   height: 100%;
   object-fit: cover;
   z-index: 1;
+
+
+}
+
+@keyframes hero_img_scale {
+
+  
 }
 
 .hero_overlay {
@@ -387,6 +411,7 @@
   font-weight: 500;
   font-size: 1.75rem;
   color: var(--color_secondary_braun);
+  line-height: 1em;
 
   animation: p_in 0.8s ease-out 0.7s 1 both;
 }
@@ -405,10 +430,22 @@
 .travel_badge {
   position: absolute;
   bottom: 11px;
-  left: 363px;
+  left: 415px;
   width: 160px;
   height: 160px;
   z-index: 5;
+  box-shadow: 
+    -1px 1px 0px rgba(3, 7, 18, 0.10),
+    -2px 2px 2px rgba(3, 7, 18, 0.09),
+    -9px 8px 7px rgba(3, 7, 18, 0.07),
+    -15px 13px 10px rgba(3, 7, 18, 0.06),
+    -21px 19px 15px rgba(3, 7, 18, 0.04),
+    -29px 26px 21px rgba(3, 7, 18, 0.03),
+    -38px 34px 27px rgba(3, 7, 18, 0.02),
+    -48px 43px 34px rgba(3, 7, 18, 0.01),
+    -5px 5px 4px rgba(3, 7, 18, 0.08);
+    border-radius: 50%;
+
   animation: badge_in 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 5s 1 both;
 }
 
@@ -421,7 +458,7 @@
     opacity: 1;
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(-60px);
     opacity: 1;
   }
 }
