@@ -91,3 +91,41 @@
     font-weight: 400;
     line-height: 1.25rem;
 }
+
+.slider{
+    height: 300px;
+
+    display: flex;
+
+}
+
+.slider_element{
+    z-index: 1;
+    width: 100px;
+    height: 80%;
+
+    background-color: blueviolet;
+    box-shadow: 0px 4px 3px rgba(3, 7, 18, 0.03),
+        0px 14px 11px rgba(3, 7, 18, 0.05),
+        0px 32px 24px rgba(3, 7, 18, 0.08);
+
+    transform: perspective(250px) rotateY(20deg) translateX(-20px);
+    transform-origin: 50% 50%;
+
+    transition: all 250ms ease-in-out;
+}
+
+.slider_element:hover{
+    z-index: 2;
+
+    background-color: aqua;
+    transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
+}
+
+.slider_element:hover~.slider_element{
+   transform: perspective(250px) rotateY(-20deg) translateX(20px);
+
+    background-color: gold;
+
+    
+}
