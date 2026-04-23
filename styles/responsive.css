@@ -11,10 +11,12 @@
 
   .faq_section {
     padding: 0px max(120px, calc(50% - 720px));
+    padding-top: 120px;
   }
 
   .contact_section {
     padding: 0px max(120px, calc(50% - 720px));
+    padding-top: 120px;
   }
 
   .footer_section {
