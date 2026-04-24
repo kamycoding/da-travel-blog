@@ -163,3 +163,37 @@
     font-weight: 400;
     line-height: 2rem;
 }
+
+.list_section {
+    width: 85%;
+    margin: auto;
+    font-family: "Palanquin";
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--color_p_gray);
+    line-height: 2rem;
+}
+
+.list_section > ol{
+    list-style-type: decimal;
+}
+
+.list_section > ol > li{
+    padding-left: 10px;
+    margin-left: 40px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list > p {
+    padding-bottom: 32px;
+}
+
+.list_text_highlight{
+    font-weight: 700;
+}
+

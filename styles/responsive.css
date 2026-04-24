@@ -36,7 +36,9 @@
     padding: 0px max(120px, calc(50% - 720px));
 }
 
-
+.list_section{
+    padding: 80px max(120px, calc(50% - 720px));
+}
 
 }
 
