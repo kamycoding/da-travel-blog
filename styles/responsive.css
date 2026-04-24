@@ -167,3 +167,147 @@
     padding: 10px 12px;
   }
 }
+
+/* =========================
+   FAQ Section
+========================= */
+
+/* ---- 1281px - 1439px ---- */
+@media screen and (min-width: 1281px) and (max-width: 1439px) {
+  .faq_container {
+    padding: 0 100px;
+  }
+}
+
+/* ---- 1280px ---- */
+@media screen and (max-width: 1280px) {
+  .faq_section {
+    padding: 80px 0;
+  }
+
+  .faq_container {
+    padding: 0 80px;
+  }
+}
+
+/* ---- 1024px ---- */
+@media screen and (max-width: 1024px) {
+  .faq_section {
+    padding: 80px 0;
+  }
+
+  .faq_container {
+    padding: 0 48px;
+  }
+
+  .faq_heading h2 {
+    font-size: 2.75rem;
+  }
+
+  .faq_list {
+    gap: 24px;
+  }
+}
+
+/* ---- 768px ---- */
+@media screen and (max-width: 768px) {
+  .faq_section {
+    padding: 64px 0;
+  }
+
+  .faq_container {
+    padding: 0 24px;
+  }
+
+  .faq_heading {
+    margin-bottom: 32px;
+  }
+
+  .faq_heading h2 {
+    font-size: 2.25rem;
+  }
+
+  .faq_heading img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .faq_list {
+    gap: 16px;
+  }
+
+  .faq_question_text {
+    font-size: 1.25rem;
+  }
+}
+
+/* ---- 480px ---- */
+@media screen and (max-width: 480px) {
+  .faq_section {
+    padding: 48px 0;
+  }
+
+  .faq_container {
+    padding: 0 20px;
+  }
+
+  .faq_heading h2 {
+    font-size: 2rem;
+  }
+
+  .faq_heading img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .faq_question_text {
+    font-size: 1.125rem;
+  }
+}
+
+/* ---- 375px ---- */
+@media screen and (max-width: 375px) {
+  .faq_section {
+    padding: 40px 0;
+  }
+
+  .faq_container {
+    padding: 0 16px;
+  }
+
+  .faq_heading h2 {
+    font-size: 1.75rem;
+  }
+
+  .faq_list {
+    gap: 16px;
+  }
+
+  .faq_question_text {
+    font-size: 1rem;
+  }
+}
+
+/* ---- 320px ---- */
+@media screen and (max-width: 320px) {
+  .faq_section {
+    padding: 32px 0;
+  }
+
+  .faq_container {
+    padding: 0 12px;
+  }
+
+  .faq_heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .faq_heading img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .faq_question_text {
+    font-size: 0.9375rem;
+  }
+}
