@@ -22,12 +22,21 @@
   }
 
   .footer_section {
-    padding: 0px max(0px, calc(50% - 720px));
+    padding: 0px max(120px, calc(50% - 720px));
   }
-}
+
 
 /* Article Responsive */
 
-.page_hero{
+.page_hero {
     padding: 80px max(120px, calc(50% - 720px));
 }
+
+.slider_section {
+    padding: 0px max(120px, calc(50% - 720px));
+}
+
+
+
+}
+

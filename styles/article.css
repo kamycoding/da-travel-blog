@@ -92,40 +92,74 @@
     line-height: 1.25rem;
 }
 
-.slider{
-    height: 300px;
-
+.slider_section > h2{
+    padding-bottom: 110px;
     display: flex;
-
+    justify-content: center;
+    font-family: "Arima";
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color_secondary_braun);
 }
 
-.slider_element{
-    z-index: 1;
-    width: 100px;
-    height: 80%;
-
-    background-color: blueviolet;
-    box-shadow: 0px 4px 3px rgba(3, 7, 18, 0.03),
-        0px 14px 11px rgba(3, 7, 18, 0.05),
-        0px 32px 24px rgba(3, 7, 18, 0.08);
-
-    transform: perspective(250px) rotateY(20deg) translateX(-20px);
-    transform-origin: 50% 50%;
-
-    transition: all 250ms ease-in-out;
+.slider {
+  height: clamp(240px, 32vw, 350px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  overflow: visible;
 }
 
-.slider_element:hover{
-    z-index: 2;
+.slider_element {
+  width: clamp(130px, 16vw, 300px);
+  height: clamp(190px, 28vw, 440px);
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  
+  box-shadow:
+    -1px 1px 1px rgba(3, 7, 18, 0.02),
+    -6px 5px 4px rgba(3, 7, 18, 0.03),
+    -13px 12px 9px rgba(3, 7, 18, 0.05),
+    -24px 20px 15px rgba(3, 7, 18, 0.06),
+    -37px 32px 24px rgba(3, 7, 18, 0.08);
 
-    background-color: aqua;
-    transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
+
+  transform: perspective(400px) rotateY(12deg) translateX(32px);
+  transform-origin: center;
+  transition: all 250ms ease-in-out;
 }
 
-.slider_element:hover~.slider_element{
-   transform: perspective(250px) rotateY(-20deg) translateX(20px);
+.slider_element:not(:first-child) {
+  margin-left: clamp(-70px, -5vw, -35px);
+}
 
-    background-color: gold;
+.slider_element > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
-    
+.slider_element:hover {
+  z-index: 10;
+  transform: perspective(400px) rotateY(0deg) translateX(0) scale(1.16);
+}
+
+.slider_element:hover ~ .slider_element {
+  transform: perspective(400px) rotateY(-12deg) translateX(130px);
+}
+
+.slider_element:has(~ .slider_element:hover) {
+  transform: perspective(400px) rotateY(12deg) translateX(-130px);
+}
+
+.slider_section > p {
+    padding-top: 140px;
+    color: var(--color_p_gray);
+    font-size: 1.5rem;
+    font-family: "Palanquin";
+    font-weight: 400;
+    line-height: 2rem;
 }
