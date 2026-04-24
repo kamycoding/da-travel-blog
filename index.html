@@ -420,11 +420,19 @@
             </div>
 
             <div class="contact_checkbox">
-              <input type="checkbox" id="privacy" name="privacy" required />
-              <label for="privacy"
-                >I've read the <a href="#">privacy policy</a> and agree to the
-                processing of my data as outlined.</label
-              >
+              <div class="contact_checkbox_row">
+                <input type="checkbox" id="privacy" name="privacy" />
+                <label for="privacy">
+                  I've read the <a href="#">privacy policy</a> and agree to the
+                  processing of my data as outlined.
+                </label>
+              </div>
+
+              <p
+                class="checkbox_error"
+                id="privacy-error"
+                aria-live="polite"
+              ></p>
             </div>
 
             <button type="submit">Send</button>
@@ -483,5 +491,6 @@
     <!-- script -->
     <script src="./js/faq.js"></script>
     <script src="./js/highlights.js"></script>
+    <script src="./js/contact.js"></script>
   </body>
 </html>
