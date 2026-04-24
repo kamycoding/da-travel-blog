@@ -45,7 +45,18 @@
           <a href="#" class="header_logo" aria-label="Go to homepage">
             <img src="./assets/icons/logo 03 1.svg" alt="Blog Logo" />
           </a>
-          <ul class="header_links">
+          <button
+            class="hamburger"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="header-menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="header_links" id="header-menu">
             <li>
               <a href="#highlights"
                 >Highlights
@@ -489,6 +500,7 @@
       </div>
     </footer>
     <!-- script -->
+    <script src="./js/nav.js"></script>
     <script src="./js/faq.js"></script>
     <script src="./js/highlights.js"></script>
     <script src="./js/contact.js"></script>
