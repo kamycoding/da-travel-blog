@@ -171,7 +171,7 @@
     font-weight: 400;
     font-size: 1.5rem;
     color: var(--color_p_gray);
-    line-height: 2rem;
+    line-height: 120%;
 }
 
 .list_section > ol{
@@ -193,7 +193,44 @@
     padding-bottom: 32px;
 }
 
-.list_text_highlight{
+.list_text_highlight {
     font-weight: 700;
 }
 
+.tipps_section {
+    width: 85%;
+    margin: auto;
+    font-family: "Palanquin";
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--color_p_gray);
+    line-height: 120%;
+}
+
+.tipps_section img {
+    transform: translate(-55px, 20px);
+}
+
+.tipps_section ol {
+    list-style-type: decimal;
+}
+
+.tipps_section ol > li{
+    padding-left: 10px;
+    margin-left: 40px;
+}
+
+.article_text{
+    font-family: "Palanquin";
+    color: var(--color_p_gray);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 120%;
+    width: 100%;
+}
+
+.share_section{
+    font-family: "Arima";
+    font-size: 1.5rem;
+    color: var(--color_secondary_braun);
+}
