@@ -14,15 +14,18 @@
    ========================================= */
 
 /*
-   Padding scale (horizontal):
-   1440px+      : 120px  (via max())
-   1281–1439px  : 100px
-   1280px       : 80px
-   1024px       : 48px
-   768px        : 32px
-   480px        : 20px
-   375px        : 16px
-   320px        : 12px
+   Padding scale:
+   Breakpoint   Horizontal              Vertical (sections)
+   1440px+      max(120px, 50%-720px)   120px
+   1281-1439px  100px                   100px
+   1280px       80px                    80px
+   1024px       48px                    64px
+   768px        32px                    48px
+   480px        20px                    40px
+   375px        16px                    30px
+   320px        12px                    24px
+
+   Footer vertical is half of section vertical (it's smaller).
 */
 
 /* ============================================================
@@ -37,6 +40,10 @@
     padding: 0 max(120px, calc(50% - 720px));
   }
 
+  .highlights_section {
+    padding: 120px 0;
+  }
+
   .highlights_slider {
     margin: 0 max(120px, calc(50% - 720px));
     width: auto;
@@ -49,8 +56,7 @@
   }
 
   .faq_section {
-    padding: 0 max(120px, calc(50% - 720px));
-    padding-top: 120px;
+    padding: 120px 0;
   }
 
   .faq_container {
@@ -58,8 +64,11 @@
   }
 
   .contact_section {
+    padding: 120px 0;
+  }
+
+  .contact_container {
     padding: 0 max(120px, calc(50% - 720px));
-    padding-top: 120px;
   }
 
   .footer_section {
@@ -72,11 +81,15 @@
 }
 
 /* ============================================================
-   1281px – 1439px
+   1281px - 1439px
    ============================================================ */
 @media screen and (min-width: 1281px) and (max-width: 1439px) {
   .header_section {
     padding: 0 100px;
+  }
+
+  .highlights_section {
+    padding: 100px 0;
   }
 
   .highlights_slider {
@@ -90,12 +103,24 @@
     padding-right: 100px;
   }
 
+  .faq_section {
+    padding: 100px 0;
+  }
+
   .faq_container {
     padding: 0 100px;
   }
 
+  .contact_section {
+    padding: 100px 0;
+  }
+
+  .contact_container {
+    padding: 0 100px;
+  }
+
   .footer_container {
-    padding: 60px 100px;
+    padding: 50px 100px;
   }
 }
 
@@ -114,6 +139,10 @@
   }
 
   /* Highlights */
+  .highlights_section {
+    padding: 80px 0;
+  }
+
   .highlights_slider {
     margin: 0 80px;
     width: auto;
@@ -138,9 +167,18 @@
     padding: 0 80px;
   }
 
+  /* Contact */
+  .contact_section {
+    padding: 80px 0;
+  }
+
+  .contact_container {
+    padding: 0 80px;
+  }
+
   /* Footer */
   .footer_container {
-    padding: 60px 80px;
+    padding: 40px 80px;
   }
 
   .footer_left {
@@ -168,7 +206,7 @@
 
   /* Highlights */
   .highlights_section {
-    padding-top: 80px;
+    padding: 64px 0;
   }
 
   .highlights_slider {
@@ -201,7 +239,7 @@
 
   /* FAQ */
   .faq_section {
-    padding: 80px 0;
+    padding: 64px 0;
   }
 
   .faq_container {
@@ -216,9 +254,18 @@
     gap: 24px;
   }
 
+  /* Contact */
+  .contact_section {
+    padding: 64px 0;
+  }
+
+  .contact_container {
+    padding: 0 48px;
+  }
+
   /* Footer */
   .footer_container {
-    padding: 48px 48px;
+    padding: 32px 48px;
   }
 
   .footer_left {
@@ -282,7 +329,7 @@
 
   /* Highlights */
   .highlights_section {
-    padding-top: 64px;
+    padding: 48px 0;
   }
 
   .highlights_slider {
@@ -325,7 +372,7 @@
 
   /* FAQ */
   .faq_section {
-    padding: 64px 0;
+    padding: 48px 0;
   }
 
   .faq_container {
@@ -353,9 +400,18 @@
     font-size: 1.25rem;
   }
 
+  /* Contact */
+  .contact_section {
+    padding: 48px 0;
+  }
+
+  .contact_container {
+    padding: 0 32px;
+  }
+
   /* Footer */
   .footer_container {
-    padding: 40px 32px;
+    padding: 24px 32px;
   }
 }
 
@@ -380,7 +436,7 @@
 
   /* Highlights */
   .highlights_section {
-    padding-top: 48px;
+    padding: 40px 0;
   }
 
   .highlights_slider {
@@ -442,7 +498,7 @@
 
   /* FAQ */
   .faq_section {
-    padding: 48px 0;
+    padding: 40px 0;
   }
 
   .faq_container {
@@ -462,9 +518,18 @@
     font-size: 1.125rem;
   }
 
+  /* Contact */
+  .contact_section {
+    padding: 40px 0;
+  }
+
+  .contact_container {
+    padding: 0 20px;
+  }
+
   /* Footer - mobile layout */
   .footer_container {
-    padding: 24px 20px;
+    padding: 20px 20px;
     align-items: flex-end;
   }
 
@@ -525,6 +590,10 @@
   }
 
   /* Highlights */
+  .highlights_section {
+    padding: 30px 0;
+  }
+
   .highlights_slider {
     margin: 0 16px;
   }
@@ -554,7 +623,7 @@
 
   /* FAQ */
   .faq_section {
-    padding: 40px 0;
+    padding: 30px 0;
   }
 
   .faq_container {
@@ -573,61 +642,18 @@
     font-size: 1rem;
   }
 
-  /* Footer */
-  .footer_container {
-    padding: 24px 16px;
+  /* Contact */
+  .contact_section {
+    padding: 30px 0;
   }
-}
 
-/* =========================
-   Contact Section
-========================= */
-
-@media screen and (min-width: 1440px) {
-  .contact_container {
-    padding: 0 max(120px, calc(50% - 720px));
-  }
-}
-
-@media screen and (min-width: 1281px) and (max-width: 1439px) {
-  .contact_container {
-    padding: 0 100px;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .contact_container {
-    padding: 0 80px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .contact_container {
-    padding: 0 48px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contact_container {
-    padding: 0 32px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .contact_container {
-    padding: 0 20px;
-  }
-}
-
-@media screen and (max-width: 375px) {
   .contact_container {
     padding: 0 16px;
   }
-}
 
-@media screen and (max-width: 320px) {
-  .contact_container {
-    padding: 0 12px;
+  /* Footer */
+  .footer_container {
+    padding: 30px 16px;
   }
 }
 
@@ -651,6 +677,10 @@
   }
 
   /* Highlights */
+  .highlights_section {
+    padding: 24px 0;
+  }
+
   .highlights_slider {
     margin: 0 12px;
   }
@@ -693,7 +723,7 @@
 
   /* FAQ */
   .faq_section {
-    padding: 32px 0;
+    padding: 24px 0;
   }
 
   .faq_container {
@@ -711,6 +741,15 @@
 
   .faq_question_text {
     font-size: 0.9375rem;
+  }
+
+  /* Contact */
+  .contact_section {
+    padding: 24px 0;
+  }
+
+  .contact_container {
+    padding: 0 12px;
   }
 
   /* Footer */
