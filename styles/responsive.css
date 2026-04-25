@@ -34,7 +34,7 @@
   }
 
   .footer_section {
-    padding: 0px max(0px, calc(50% - 720px));
+    padding: 0px max(120px, calc(50% - 720px));
   }
 }
 
@@ -311,3 +311,34 @@
     font-size: 0.9375rem;
   }
 }
+
+
+/* Article Responsive */
+
+  .page_hero {
+    padding: 80px max(120px, calc(50% - 720px));
+  }
+
+  .slider_section {
+    padding: 0px max(120px, calc(50% - 720px));
+  }
+
+  .list_section{
+    padding: 80px max(120px, calc(50% - 720px));
+  }
+
+  .tipps_section{
+    padding: 0px max(120px, calc(50% - 720px));
+  }
+
+  .article_text{
+    padding: 88px max(120px, calc(50% - 720px));
+  }
+
+  .share_section{
+    padding: 0px max(120px, calc(50% - 720px));
+    padding-bottom: 88px;
+  }
+
+
+

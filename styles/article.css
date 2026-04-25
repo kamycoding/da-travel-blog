@@ -1,0 +1,316 @@
+.page_hero {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.eyebrow {
+    font-size: 2.5rem;
+    font-family: "Palanquin";
+    font-weight: 600;
+    color: var(--color_primary_green);
+}
+
+.page_hero_left{
+    max-width: 75%;
+}
+
+.page_hero_left h1 {
+    font-size: 4rem;
+    font-family: "Arima";
+    font-weight: 700;
+    color: var(--color_primary_yellow);
+    line-height: 4.5rem;
+}
+
+.page_hero_left p:nth-of-type(2) {
+    font-size: 2rem;
+    font-family: "Palanquin";
+    font-weight: 400;
+    color: var(--color_secondary_braun);
+    line-height: 2.5rem;
+    padding-bottom: 59px;
+}
+
+.page_hero_left_infos{
+    display: flex;
+    gap: 32px;
+}
+
+.page_hero_left_infos > div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 6px;
+    font-family: "Palanquin";
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color_secondary_braun)
+}
+
+.page_hero_right{
+    margin:  16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color_secondary_braun);
+    font-family: "Arima";
+}
+
+.author > h3 {
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+}
+
+.author > p {
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    padding-bottom: 12px;
+    font-weight: 400;
+}
+
+.author > img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: -43px;
+    margin: 16px 0px;
+}
+
+.author_subtext {
+    max-width: 240px;
+    font-family: "Palanquin";
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.slider_section > h2{
+    padding-bottom: 110px;
+    display: flex;
+    justify-content: center;
+    font-family: "Arima";
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color_secondary_braun);
+}
+
+.slider {
+  height: clamp(240px, 32vw, 350px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  overflow: visible;
+}
+
+.slider_element {
+  width: clamp(130px, 16vw, 300px);
+  height: clamp(190px, 28vw, 440px);
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  
+  box-shadow:
+    -1px 1px 1px rgba(3, 7, 18, 0.02),
+    -6px 5px 4px rgba(3, 7, 18, 0.03),
+    -13px 12px 9px rgba(3, 7, 18, 0.05),
+    -24px 20px 15px rgba(3, 7, 18, 0.06),
+    -37px 32px 24px rgba(3, 7, 18, 0.08);
+
+
+  transform: perspective(400px) rotateY(12deg) translateX(32px);
+  transform-origin: center;
+  transition: all 250ms ease-in-out;
+}
+
+.slider_element:not(:first-child) {
+  margin-left: clamp(-70px, -5vw, -35px);
+}
+
+.slider_element > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.slider_element:hover {
+  z-index: 10;
+  transform: perspective(400px) rotateY(0deg) translateX(0) scale(1.16);
+}
+
+.slider_element:hover ~ .slider_element {
+  transform: perspective(400px) rotateY(-12deg) translateX(130px);
+}
+
+.slider_element:has(~ .slider_element:hover) {
+  transform: perspective(400px) rotateY(12deg) translateX(-130px);
+}
+
+.slider_section > p {
+    padding-top: 140px;
+    color: var(--color_p_gray);
+    font-size: 1.5rem;
+    font-family: "Palanquin";
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.list_section {
+    width: 85%;
+    margin: auto;
+    font-family: "Palanquin";
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--color_p_gray);
+    line-height: 120%;
+}
+
+.list_section > ol{
+    list-style-type: decimal;
+}
+
+.list_section > ol > li{
+    padding-left: 10px;
+    margin-left: 40px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list > p {
+    padding-bottom: 32px;
+}
+
+.list_text_highlight {
+    font-weight: 700;
+}
+
+.tipps_section {
+    width: 85%;
+    margin: auto;
+    font-family: "Palanquin";
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--color_p_gray);
+    line-height: 120%;
+}
+
+.tipps_section img {
+    transform: translate(-55px, 20px);
+}
+
+.tipps_section ol {
+    list-style-type: decimal;
+}
+
+.tipps_section ol > li {
+    padding-left: 10px;
+    margin-left: 40px;
+}
+
+.useful_link {
+    color: var(--color_primary_green);
+    font-weight: 700;
+}
+
+.article_text{
+    font-family: "Palanquin";
+    color: var(--color_p_gray);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 120%;
+    width: 100%;
+}
+
+.share_section {
+    font-family: "Arima";
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: var(--color_secondary_braun);
+    gap: 48px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin:0 auto;
+    padding-bottom: 88px;
+}
+
+.share_text{
+    max-width: 493px;
+    min-width: 280px;
+}
+
+.share_text > img {
+    transform: translate(20px, 150px);
+}
+
+
+
+.share_wrapper{
+    width: 260px;
+  height: 56px;
+    position: relative;
+}
+
+.share_btn{
+    z-index: 2;
+    left: 45px;
+    top: 10px;
+    position: absolute;
+    transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1), opacity 300ms ease;
+}
+
+.share_hidden {
+    display: flex;
+    flex-direction: row;
+    left: 45px;
+    top: 5px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1), opacity 300ms ease;
+}
+
+#share_toggle:checked ~ .share_hidden{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+#share_toggle:checked ~ .share_btn {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-120%);
+}
+
+.share_links{
+    font-family: "Arima";
+    font-size: 1.125rem;
+    color: var(--color_primary_green);
+    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    transform: translate(25px, 0px);
+}
+
+.share_links_logo{
+    height: 35px;
+    transform: translate(10px,10px);
+}
