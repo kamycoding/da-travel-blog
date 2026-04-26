@@ -64,7 +64,7 @@
   }
 
   .contact_section {
-    padding: 120px 0;
+    margin-bottom: 80px;
   }
 
   .contact_container {
@@ -112,7 +112,7 @@
   }
 
   .contact_section {
-    padding: 100px 0;
+    margin-bottom: 80px;
   }
 
   .contact_container {
@@ -169,7 +169,7 @@
 
   /* Contact */
   .contact_section {
-    padding: 80px 0;
+    margin-bottom: 80px;
   }
 
   .contact_container {
@@ -256,11 +256,20 @@
 
   /* Contact */
   .contact_section {
-    padding: 64px 0;
+    margin-bottom: 80px;
   }
 
   .contact_container {
     padding: 0 48px;
+  }
+
+  .contact_heading h2 {
+    font-size: 2.75rem;
+  }
+
+  .contact_heading img {
+    width: 40px;
+    height: 40px;
   }
 
   /* Footer */
@@ -402,11 +411,43 @@
 
   /* Contact */
   .contact_section {
-    padding: 48px 0;
+    margin-bottom: 80px;
   }
 
   .contact_container {
     padding: 0 32px;
+  }
+
+  .contact_heading h2 {
+    font-size: 2.25rem;
+  }
+
+  .contact_heading img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .contact_subtext {
+    display: none;
+  }
+
+  .contact_checkbox {
+    margin-top: 22px;
+    margin-bottom: 0;
+  }
+
+  .contact_checkbox_row {
+    align-items: flex-start;
+  }
+
+  .contact_checkbox input[type="checkbox"] {
+    margin-top: 6px;
+  }
+
+  .contact_input_group {
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
   }
 
   /* Footer */
@@ -520,11 +561,33 @@
 
   /* Contact */
   .contact_section {
-    padding: 40px 0;
+    margin-bottom: 80px;
   }
 
   .contact_container {
     padding: 0 20px;
+  }
+
+  .contact_heading h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact_heading img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .contact_subtext p {
+    font-size: 1.125rem;
+  }
+
+  .contact_inputs label {
+    font-size: 1.25rem;
+  }
+
+  .contact_inputs input,
+  .contact_inputs textarea {
+    font-size: 1.25rem;
   }
 
   /* Footer - mobile layout */
@@ -591,7 +654,7 @@
 
   /* Highlights */
   .highlights_section {
-    padding: 30px 0;
+    padding: 40px 0;
   }
 
   .highlights_slider {
@@ -623,7 +686,7 @@
 
   /* FAQ */
   .faq_section {
-    padding: 30px 0;
+    padding: 40px 0;
   }
 
   .faq_container {
@@ -631,7 +694,7 @@
   }
 
   .faq_heading h2 {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
   }
 
   .faq_list {
@@ -644,11 +707,15 @@
 
   /* Contact */
   .contact_section {
-    padding: 30px 0;
+    margin-bottom: 80px;
   }
 
   .contact_container {
     padding: 0 16px;
+  }
+
+  .contact_heading h2 {
+    font-size: 2.5rem;
   }
 
   /* Footer */
@@ -745,11 +812,29 @@
 
   /* Contact */
   .contact_section {
-    padding: 24px 0;
+    margin-bottom: 80px;
   }
 
   .contact_container {
     padding: 0 12px;
+  }
+
+  .contact_heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact_heading img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .contact_inputs label {
+    font-size: 1.125rem;
+  }
+
+  .contact_inputs input,
+  .contact_inputs textarea {
+    font-size: 1.125rem;
   }
 
   /* Footer */
