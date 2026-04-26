@@ -25,7 +25,6 @@
    375px        16px                    30px
    320px        12px                    24px
 
-   Footer vertical is half of section vertical (it's smaller).
 */
 
 /* ============================================================
@@ -56,19 +55,11 @@
   }
 
   .faq_section {
-    padding: 120px 0;
-  }
-
-  .faq_container {
-    padding: 0 max(120px, calc(50% - 720px));
+    padding-bottom: 120px;
   }
 
   .contact_section {
-    margin-bottom: 80px;
-  }
-
-  .contact_container {
-    padding: 0 max(120px, calc(50% - 720px));
+    margin-bottom: 126px;
   }
 
   .footer_section {

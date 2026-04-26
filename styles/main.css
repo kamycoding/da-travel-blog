@@ -560,7 +560,6 @@
 ========================= */
 .highlights_section {
   width: 100%;
-  padding-top: 120px;
 }
 
 .highlights_container {
@@ -710,123 +709,6 @@
 
 .faq_section {
   width: 100%;
-  padding: 120px 0;
-}
-
-.faq_container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.faq_heading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 48px;
-}
-
-.faq_heading h2 {
-  color: var(--color_primary_green);
-  font-family: "Arima", Arial, sans-serif;
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: center;
-}
-
-.faq_heading img {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-}
-
-.faq_list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.faq_item {
-  width: 100%;
-  background-color: var(--color_primary_yellow);
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.faq_question {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 14px;
-}
-
-.faq_item.is_open .faq_question {
-  padding-bottom: 12px;
-}
-
-.faq_question_text {
-  color: var(--color_secondary_braun);
-  font-family: "Palanquin", Arial, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: left;
-}
-
-.faq_icon {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-}
-
-.faq_icon img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: transform 220ms ease;
-  transform: rotate(360deg);
-}
-
-.faq_item.is_open .faq_icon img {
-  transform: rotate(180deg);
-}
-
-.faq_answer {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition:
-    max-height 350ms ease,
-    opacity 300ms ease;
-}
-
-.faq_item.is_open .faq_answer {
-  opacity: 1;
-}
-
-.faq_answer p {
-  padding: 4px 10px;
-  margin: 0 14px 16px;
-  color: var(--color_secondary_braun);
-  font-family: "Palanquin", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.2;
-  background: var(--color_white);
-  border-radius: 5px;
-}
-
-/* =========================
-   FAQ Section
-========================= */
-
-.faq_section {
-  width: 100%;
-  padding: 120px 0;
 }
 
 .faq_container {
