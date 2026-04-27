@@ -88,6 +88,10 @@
     width: auto;
   }
 
+  .hero_text{
+    padding-left: 85px;
+  }
+
   .highlights_heading,
   .highlights_intro {
     padding-left: 100px;
@@ -129,6 +133,20 @@
     font-size: 1.375rem;
   }
 
+  .hero_text {
+    padding-left: 85px;
+  }
+
+  .hero_text h1{
+    font-size: 3rem;
+  }
+
+  .hero_text p{
+    font-size: 1.5rem;
+    max-width: 250px;
+  }
+
+
   /* Highlights */
   .highlights_section {
     padding: 80px 0;
@@ -149,6 +167,7 @@
     margin-bottom: 64px;
   }
 
+  
   /* FAQ */
   .faq_section {
     padding: 80px 0;
@@ -182,6 +201,33 @@
 }
 
 /* ============================================================
+   max-width: 1180px
+   ============================================================ */
+@media screen and (max-width: 1180px){
+  /* Header */
+
+  .travel_badge {
+    left: 32%;
+    width: 140px;
+    height: 140px;
+  }
+
+  .travel_badge__text_wrap {
+    width: 112px;
+    height: 112px;
+  }
+
+  .travel_badge__text {
+  width: 100%;
+  height: 100%;
+}
+
+.travel_badge__flag {
+    width: 40px;
+    height: 40px;
+}
+}
+/* ============================================================
    max-width: 1024px
    ============================================================ */
 @media screen and (max-width: 1024px) {
@@ -194,6 +240,31 @@
     gap: 32px;
     font-size: 1.25rem;
   }
+
+  .hero_img {
+    transform: translateX(170px);
+  }
+
+  .travel_badge {
+    left: 32%;
+    width: 140px;
+    height: 140px;
+  }
+
+  .travel_badge__text_wrap {
+    width: 112px;
+    height: 112px;
+  }
+
+  .travel_badge__text {
+  width: 100%;
+  height: 100%;
+}
+
+.travel_badge__flag {
+    width: 40px;
+    height: 40px;
+}
 
   /* Highlights */
   .highlights_section {
