@@ -1,8 +1,12 @@
 ﻿
 
 @media screen and (min-width: 1440px) {
+  .hero {
+    --hero-text-inline-start: 120px;
+  }
+
   .header_section {
-    padding: 0 max(146px, calc(50% - 720px));
+    padding: 0 0 0 120px;
   }
 
   .highlights_slider {
@@ -39,6 +43,10 @@
 
 
 @media screen and (min-width: 1281px) and (max-width: 1439px) {
+  .hero {
+    --hero-text-inline-start: 100px;
+  }
+
   .header_section {
     padding: 0 100px;
   }
@@ -69,6 +77,10 @@
 
 
 @media screen and (max-width: 1280px) {
+  .hero {
+    --hero-text-inline-start: 80px;
+  }
+
   
   .header_section {
     padding: 0 80px;
@@ -121,6 +133,10 @@
 
 
 @media screen and (max-width: 1024px) {
+  .hero {
+    --hero-text-inline-start: 48px;
+  }
+
   main {
     --section-gap: 80px;
   }
@@ -211,6 +227,10 @@
 
 
 @media screen and (max-width: 768px) {
+  .hero {
+    --hero-text-inline-start: 32px;
+  }
+
   
   .hamburger {
     display: flex;
@@ -623,6 +643,10 @@
 
 
 @media screen and (max-width: 375px) {
+  .hero {
+    --hero-text-inline-start: 16px;
+  }
+
   
   .header_section {
     padding: 0 16px;
@@ -700,6 +724,10 @@
 
 
 @media screen and (max-width: 320px) {
+  .hero {
+    --hero-text-inline-start: 12px;
+  }
+
   
   .header_section {
     padding: 0 12px;

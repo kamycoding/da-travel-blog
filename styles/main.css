@@ -265,6 +265,7 @@
   width: 100%;
   overflow: visible;
   isolation: isolate;
+  --hero-text-inline-start: max(146px, calc(50% - 720px));
 }
 
 .hero_inner {
@@ -415,7 +416,7 @@
   }
 
   100% {
-    left: clamp(32px, 7vw, 100px);
+    left: var(--hero-text-inline-start);
     transform: translate(0, -50%);
     opacity: 1;
   }
