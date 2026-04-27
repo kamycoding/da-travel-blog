@@ -53,6 +53,10 @@
     width: auto;
   }
 
+  .hero_text{
+    padding-left: 85px;
+  }
+
   .highlights_heading,
   .highlights_intro {
     padding-left: 100px;

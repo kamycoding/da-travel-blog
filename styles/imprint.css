@@ -1,0 +1,42 @@
+.imprint {
+  max-width: 720px;
+  margin: 120px auto;
+  padding: 0 24px;
+
+  font-family: "Arima", sans-serif;
+  color: var(--color_secondary_braun);
+  line-height: 120%;
+}
+
+.imprint h1 {
+  font-size: 2.8rem;
+  margin-bottom: 48px;
+  color: var(--color_primary_green);
+}
+
+.imprint h2 {
+  font-size: 1.4rem;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  color: var(--color_primary_green);
+}
+
+.imprint p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.imprint address {
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.imprint a {
+  color: var(--color_primary_green);
+  transition: opacity 200ms ease;
+}
+
+.imprint a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
