@@ -1,46 +1,10 @@
-/* =========================================
-   RESPONSIVE STYLES
-   Breakpoints:
-
-   - 1440px  : extra large
-   - 1280px   : large desktop
-   - 1024px   : tablet landscape / small laptop
-   - 768px    : tablet portrait
-   - 480px    : large mobile
-   - 375px    : standard mobile
-   - 320px    : small mobile
-
-   !kamy and max
-   ========================================= */
-
-/*
-   Padding scale:
-   Breakpoint   Horizontal              Vertical (sections)
-   1440px+      max(120px, 50%-720px)   120px
-   1281-1439px  100px                   100px
-   1280px       80px                    80px
-   1024px       48px                    64px
-   768px        32px                    48px
-   480px        20px                    40px
-   375px        16px                    30px
-   320px        12px                    24px
-
-*/
-
-/* ============================================================
-   1440px+
-   ============================================================ */
 @media screen and (min-width: 1440px) {
-  .header_section {
-    padding: 0 max(146px, calc(50% - 720px));
-  }
-
   .hero {
-    padding: 0 max(120px, calc(50% - 720px));
+    --hero-text-inline-start: 120px;
   }
 
-  .highlights_section {
-    padding: 120px 0;
+  .header_section {
+    padding: 0 0 0 120px;
   }
 
   .highlights_slider {
@@ -54,12 +18,16 @@
     padding-right: max(120px, calc(50% - 720px));
   }
 
-  .faq_section {
-    padding-bottom: 120px;
+  .faq_list {
+    margin: 0 max(120px, calc(50% - 720px));
   }
 
-  .contact_section {
-    margin-bottom: 126px;
+  .contact_container {
+    padding: 0;
+  }
+
+  .contact_form {
+    margin: 0 max(120px, calc(50% - 720px));
   }
 
   .footer_section {
@@ -106,12 +74,12 @@
    1281px - 1439px
    ============================================================ */
 @media screen and (min-width: 1281px) and (max-width: 1439px) {
-  .header_section {
-    padding: 0 100px;
+  .hero {
+    --hero-text-inline-start: 100px;
   }
 
-  .highlights_section {
-    padding: 100px 0;
+  .header_section {
+    padding: 0 100px;
   }
 
   .highlights_slider {
@@ -129,16 +97,8 @@
     padding-right: 100px;
   }
 
-  .faq_section {
-    padding: 100px 0;
-  }
-
   .faq_container {
     padding: 0 100px;
-  }
-
-  .contact_section {
-    margin-bottom: 80px;
   }
 
   .contact_container {
@@ -180,7 +140,10 @@
    max-width: 1280px
    ============================================================ */
 @media screen and (max-width: 1280px) {
-  /* Header */
+  .hero {
+    --hero-text-inline-start: 80px;
+  }
+
   .header_section {
     padding: 0 80px;
   }
@@ -232,16 +195,10 @@
     padding: 0 80px;
   }
 
-  /* Contact */
-  .contact_section {
-    margin-bottom: 80px;
-  }
-
   .contact_container {
     padding: 0 80px;
   }
 
-  /* Footer */
   .footer_container {
     padding: 40px 80px;
   }
@@ -384,6 +341,10 @@
     gap: 16px;
   }
 
+  .highlights_heading h2 {
+    font-size: 2.75rem;
+  }
+
   .highlights_dot {
     width: 20px;
     height: 20px;
@@ -391,11 +352,6 @@
 
   .highlights_dot.is-active {
     width: 32px;
-  }
-
-  /* FAQ */
-  .faq_section {
-    padding: 64px 0;
   }
 
   .faq_container {
@@ -408,11 +364,6 @@
 
   .faq_list {
     gap: 24px;
-  }
-
-  /* Contact */
-  .contact_section {
-    margin-bottom: 80px;
   }
 
   .contact_container {
@@ -428,7 +379,6 @@
     height: 40px;
   }
 
-  /* Footer */
   .footer_container {
     padding: 32px 48px;
   }
@@ -522,7 +472,10 @@
    max-width: 768px
    ============================================================ */
 @media screen and (max-width: 768px) {
-  /* Header */
+  .hero {
+    --hero-text-inline-start: 32px;
+  }
+
   .hamburger {
     display: flex;
   }
@@ -568,11 +521,6 @@
     display: none;
   }
 
-  /* Highlights */
-  .highlights_section {
-    padding: 48px 0;
-  }
-
   .highlights_slider {
     margin: 0 32px;
   }
@@ -588,8 +536,12 @@
     height: 36px;
   }
 
+  .highlights_heading h2 {
+    font-size: 2.25rem;
+  }
+
   .highlights_intro {
-    margin-bottom: 32px;
+    display: none;
   }
 
   .highlight_slide_overlay {
@@ -609,11 +561,6 @@
 
   .highlights_dot.is-active {
     width: 28px;
-  }
-
-  /* FAQ */
-  .faq_section {
-    padding: 48px 0;
   }
 
   .faq_container {
@@ -639,11 +586,6 @@
 
   .faq_question_text {
     font-size: 1.25rem;
-  }
-
-  /* Contact */
-  .contact_section {
-    margin-bottom: 80px;
   }
 
   .contact_container {
@@ -682,7 +624,6 @@
     margin-bottom: 32px;
   }
 
-  /* Footer */
   .footer_container {
     padding: 24px 32px;
   }
@@ -845,7 +786,6 @@
    max-width: 480px
    ============================================================ */
 @media screen and (max-width: 480px) {
-  /* Header */
   .header_section {
     padding: 0 20px;
   }
@@ -858,11 +798,6 @@
   .header_links a {
     font-size: 1.125rem;
     padding: 12px 20px;
-  }
-
-  /* Highlights */
-  .highlights_section {
-    padding: 40px 0;
   }
 
   .highlights_slider {
@@ -922,11 +857,6 @@
     width: 40px;
   }
 
-  /* FAQ */
-  .faq_section {
-    padding: 40px 0;
-  }
-
   .faq_container {
     padding: 0 20px;
   }
@@ -942,11 +872,6 @@
 
   .faq_question_text {
     font-size: 1.125rem;
-  }
-
-  /* Contact */
-  .contact_section {
-    margin-bottom: 80px;
   }
 
   .contact_container {
@@ -975,7 +900,6 @@
     font-size: 1.25rem;
   }
 
-  /* Footer - mobile layout */
   .footer_container {
     padding: 20px 20px;
     align-items: flex-end;
@@ -1061,7 +985,10 @@
    max-width: 375px
    ============================================================ */
 @media screen and (max-width: 375px) {
-  /* Header */
+  .hero {
+    --hero-text-inline-start: 16px;
+  }
+
   .header_section {
     padding: 0 16px;
   }
@@ -1074,11 +1001,6 @@
   .header_links a {
     font-size: 1rem;
     padding: 12px 16px;
-  }
-
-  /* Highlights */
-  .highlights_section {
-    padding: 40px 0;
   }
 
   .highlights_slider {
@@ -1108,11 +1030,6 @@
     font-size: 1.25rem;
   }
 
-  /* FAQ */
-  .faq_section {
-    padding: 40px 0;
-  }
-
   .faq_container {
     padding: 0 16px;
   }
@@ -1129,11 +1046,6 @@
     font-size: 1rem;
   }
 
-  /* Contact */
-  .contact_section {
-    margin-bottom: 80px;
-  }
-
   .contact_container {
     padding: 0 16px;
   }
@@ -1142,17 +1054,16 @@
     font-size: 2.5rem;
   }
 
-  /* Footer */
   .footer_container {
     padding: 30px 16px;
   }
 }
 
-/* ============================================================
-   max-width: 320px
-   ============================================================ */
 @media screen and (max-width: 320px) {
-  /* Header */
+  .hero {
+    --hero-text-inline-start: 12px;
+  }
+
   .header_section {
     padding: 0 12px;
   }
@@ -1165,11 +1076,6 @@
   .header_links a {
     font-size: 0.9375rem;
     padding: 10px 12px;
-  }
-
-  /* Highlights */
-  .highlights_section {
-    padding: 24px 0;
   }
 
   .highlights_slider {
@@ -1212,11 +1118,6 @@
     width: 32px;
   }
 
-  /* FAQ */
-  .faq_section {
-    padding: 24px 0;
-  }
-
   .faq_container {
     padding: 0 12px;
   }
@@ -1232,11 +1133,6 @@
 
   .faq_question_text {
     font-size: 0.9375rem;
-  }
-
-  /* Contact */
-  .contact_section {
-    margin-bottom: 80px;
   }
 
   .contact_container {
@@ -1261,7 +1157,6 @@
     font-size: 1.125rem;
   }
 
-  /* Footer */
   .footer_container {
     padding: 24px 12px;
   }
