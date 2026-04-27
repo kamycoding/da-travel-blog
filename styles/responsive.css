@@ -69,6 +69,37 @@
   .footer_container {
     padding: 60px max(120px, calc(50% - 720px));
   }
+
+  /* Article */
+
+  .page_hero {
+    padding: 0 max(146px, calc(50% - 720px));
+    padding-top: 88px;
+  }
+
+  .slider_section {
+    padding: 0 max(146px, calc(50% - 720px));
+  }
+
+  .list_section {
+    padding: 0 max(146px, calc(50% - 720px));
+    padding-top: 88px;
+  }
+
+  .tipps_section {
+    padding: 0 max(146px, calc(50% - 720px));
+    padding-top: 88px;
+  }
+
+  .article_text {
+    padding: 0 max(146px, calc(50% - 720px));
+    padding-top: 88px;
+  }
+
+  .share_section {
+    padding: 0 max(146px, calc(50% - 720px));
+    padding-bottom: 88px;
+  }
 }
 
 /* ============================================================
@@ -88,7 +119,7 @@
     width: auto;
   }
 
-  .hero_text{
+  .hero_text {
     padding-left: 85px;
   }
 
@@ -117,6 +148,32 @@
   .footer_container {
     padding: 50px 100px;
   }
+
+  /* Article */
+
+  .page_hero {
+    padding: 88px 100px 0px 100px;
+  }
+
+  .slider_section {
+    padding: 0px 100px;
+  }
+
+  .list_section {
+    padding: 88px 100px 0px 100px;
+  }
+
+  .tipps_section {
+    padding: 88px 100px 0px 100px;
+  }
+
+  .article_text {
+    padding: 88px 100px 0px 100px;
+  }
+
+  .share_section {
+    padding: 0px 100px 88px 100px;
+  }
 }
 
 /* ============================================================
@@ -137,15 +194,14 @@
     padding-left: 85px;
   }
 
-  .hero_text h1{
+  .hero_text h1 {
     font-size: 3rem;
   }
 
-  .hero_text p{
+  .hero_text p {
     font-size: 1.5rem;
     max-width: 250px;
   }
-
 
   /* Highlights */
   .highlights_section {
@@ -167,7 +223,6 @@
     margin-bottom: 64px;
   }
 
-  
   /* FAQ */
   .faq_section {
     padding: 80px 0;
@@ -198,12 +253,38 @@
   .footer_links {
     gap: 48px;
   }
+
+  /* Article */
+
+  .page_hero {
+    padding: 66px 80px 0px 80px;
+  }
+
+  .slider_section {
+    padding: 0px 80px;
+  }
+
+  .list_section {
+    padding: 66px 80px 0px 80px;
+  }
+
+  .tipps_section {
+    padding: 66px 80px 0px 80px;
+  }
+
+  .article_text {
+    padding: 66px 80px 0px 80px;
+  }
+
+  .share_section {
+    padding: 0px 80px 66px 80px;
+  }
 }
 
 /* ============================================================
    max-width: 1180px
    ============================================================ */
-@media screen and (max-width: 1180px){
+@media screen and (max-width: 1180px) {
   /* Header */
 
   .travel_badge {
@@ -218,15 +299,28 @@
   }
 
   .travel_badge__text {
-  width: 100%;
-  height: 100%;
-}
+    width: 100%;
+    height: 100%;
+  }
 
-.travel_badge__flag {
+  .travel_badge__flag {
     width: 40px;
     height: 40px;
+  }
+
+  .share_section p {
+    min-width: 450px;
+  }
+
+  .slider_element:hover ~ .slider_element {
+    transform: perspective(400px) rotateY(-12deg) translateX(80px);
+  }
+
+  .slider_element:has(~ .slider_element:hover) {
+    transform: perspective(400px) rotateY(12deg) translateX(-80px);
+  }
 }
-}
+
 /* ============================================================
    max-width: 1024px
    ============================================================ */
@@ -257,14 +351,14 @@
   }
 
   .travel_badge__text {
-  width: 100%;
-  height: 100%;
-}
+    width: 100%;
+    height: 100%;
+  }
 
-.travel_badge__flag {
+  .travel_badge__flag {
     width: 40px;
     height: 40px;
-}
+  }
 
   /* Highlights */
   .highlights_section {
@@ -345,6 +439,82 @@
 
   .footer_links {
     gap: 32px;
+  }
+
+  /* Article */
+
+  .eyebrow {
+    font-size: 2rem;
+  }
+
+  .page_hero_left h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .page_hero_left p:nth-of-type(2) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .author > p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .slider_section > h2 {
+    font-size: 1.75rem;
+    padding: 40px 0px 35px 0px;
+  }
+
+  .slider_section > p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding-top: 40px;
+  }
+
+  .list_section {
+    font-size: 1.25rem;
+  }
+
+  .tipps_section {
+    font-size: 1.25rem;
+  }
+
+  .article_text {
+    font-size: 1.25rem;
+  }
+
+  .share_section {
+    font-size: 1.35rem;
+  }
+
+  .share_links {
+    font-size: 1.125rem;
+  }
+}
+
+/* ============================================================
+   max-width: 930px
+   ============================================================ */
+@media screen and (max-width: 930px) {
+  .page_hero {
+    padding: 40px 48px 0px 48px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page_hero_left {
+    max-width: 100%;
+  }
+
+  .author_subtext {
+    max-width: 100%;
+  }
+
+  .share_text > img {
+    scale: 0.8;
+    transform: translate(20px, 180px);
   }
 }
 
@@ -515,6 +685,159 @@
   /* Footer */
   .footer_container {
     padding: 24px 32px;
+  }
+
+  /* Article */
+  .eyebrow {
+    font-size: 1.75rem;
+  }
+
+  .page_hero_left h1 {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
+
+  .page_hero_left p:nth-of-type(2) {
+    line-height: 1.75rem;
+  }
+
+  .page_hero {
+    padding: 40px 32px 0px 32px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page_hero_left {
+    max-width: 100%;
+  }
+
+  .author_subtext {
+    max-width: 100%;
+  }
+
+  .page_hero_left p:nth-of-type(2) {
+    padding-bottom: 20px;
+  }
+
+  .page_hero_left_infos {
+    gap: 16px;
+  }
+
+  .slider_section {
+    padding: 0px 32px;
+  }
+
+  .slider {
+    height: 180px;
+  }
+
+  .slider_element:first-child,
+  .slider_element:last-child {
+    display: none;
+  }
+
+  .slider_element:hover ~ .slider_element {
+    transform: perspective(400px) rotateY(-12deg) translateX(60px);
+  }
+
+  .slider_element:has(~ .slider_element:hover) {
+    transform: perspective(400px) rotateY(12deg) translateX(-60px);
+  }
+
+  .list_section {
+    padding: 40px 32px 0px 32px;
+  }
+
+  .tipps_section {
+    padding: 40px 32px 0px 32px;
+  }
+
+  .tipps_section img {
+    scale: 0.8;
+  }
+
+  .article_text {
+    padding: 40px 32px 0px 32px;
+  }
+
+  .share_section {
+    padding: 0px 32px 40px 32px;
+  }
+
+  .share_text > img {
+    scale: 0.8;
+    transform: translate(20px, 180px);
+  }
+}
+
+/* ============================================================
+   max-width: 593px
+   ============================================================ */
+@media screen and (max-width: 593px) {
+  .page_hero_left_infos {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    gap: 8px;
+    text-align: left;
+    width: fit-content;
+  }
+
+  .page_hero_left_infos > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+  }
+
+  .page_hero_left_infos > div:nth-child(4) {
+  transform: translateX(-40px);
+}
+
+/* ============================================================
+   max-width: 570px
+   ============================================================ */
+@media screen and (max-width: 570px) {
+  /* Footer - mobile layout */
+  .footer_container {
+    padding: 20px 20px;
+    align-items: flex-end;
+  }
+
+  .footer_left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .footer_copyright {
+    order: 3;
+    font-size: 16px;
+  }
+
+  .footer_copyright_icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer_links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .footer_links a {
+    font-size: 16px;
+  }
+
+  .footer_socials img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer_socials a[aria-label="YouTube"] img {
+    width: 33px;
+    height: 24px;
   }
 }
 
@@ -692,6 +1015,45 @@
   .footer_socials a[aria-label="YouTube"] img {
     width: 33px;
     height: 24px;
+  }
+
+  /* Article */
+
+  .page_hero {
+    padding: 40px 20px 0px 20px;
+  }
+
+  .page_hero_left p:nth-of-type(2) {
+    padding-bottom: 20px;
+  }
+
+  .slider_section {
+    padding: 0px 20px;
+  }
+
+  .list_section {
+    padding: 40px 20px 0px 20px;
+  }
+
+  .tipps_section {
+    padding: 40px 20px 0px 20px;
+  }
+
+  .tipps_section img {
+    scale: 0.8;
+  }
+
+  .article_text {
+    padding: 40px 20px 0px 20px;
+  }
+
+  .share_section {
+    padding: 0px 20px 40px 20px;
+  }
+
+  .share_text > img {
+    scale: 0.8;
+    transform: translate(20px, 180px);
   }
 }
 
@@ -926,4 +1288,5 @@
     width: 28px;
     height: 20px;
   }
+}
 }
