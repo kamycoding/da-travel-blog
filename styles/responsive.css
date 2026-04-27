@@ -4,20 +4,20 @@
   }
 
   .hero_text {
-    max-width: 320px;
-    width: min(320px, calc(100% - 32px));
+    max-width: 286px;
+    width: min(286px, calc(100% - 32px));
   }
 
   .hero_text h1 {
-    font-size: 3.35rem;
+    font-size: 3rem;
   }
 
   .hero_text p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 
   .travel_badge {
-    left: 28.5%;
+    left: 25%;
     bottom: 10%;
     width: 160px;
     height: 160px;
