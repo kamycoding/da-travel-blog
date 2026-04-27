@@ -1,169 +1,165 @@
 ﻿/* Font Face */
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Arima";
   font-style: normal;
   font-weight: 100;
   src: url("../assets/fonts/arima-v7-greek_greek-ext_latin_latin-ext_malayalam_tamil_vietnamese-100.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Arima";
   font-style: normal;
   font-weight: 200;
   src: url("../assets/fonts/arima-v7-greek_greek-ext_latin_latin-ext_malayalam_tamil_vietnamese-200.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Arima";
   font-style: normal;
   font-weight: 300;
   src: url("../assets/fonts/arima-v7-greek_greek-ext_latin_latin-ext_malayalam_tamil_vietnamese-300.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Arima";
   font-style: normal;
   font-weight: 400;
   src: url("../assets/fonts/arima-v7-greek_greek-ext_latin_latin-ext_malayalam_tamil_vietnamese-regular.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Arima";
   font-style: normal;
   font-weight: 500;
   src: url("../assets/fonts/arima-v7-greek_greek-ext_latin_latin-ext_malayalam_tamil_vietnamese-500.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Arima";
   font-style: normal;
   font-weight: 600;
   src: url("../assets/fonts/arima-v7-greek_greek-ext_latin_latin-ext_malayalam_tamil_vietnamese-600.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Arima";
   font-style: normal;
   font-weight: 700;
   src: url("../assets/fonts/arima-v7-greek_greek-ext_latin_latin-ext_malayalam_tamil_vietnamese-700.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
-
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Palanquin";
   font-style: normal;
   font-weight: 100;
   src: url("../assets/fonts/palanquin-v17-devanagari_latin_latin-ext-100.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Palanquin";
   font-style: normal;
   font-weight: 200;
   src: url("../assets/fonts/palanquin-v17-devanagari_latin_latin-ext-200.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Palanquin";
   font-style: normal;
   font-weight: 300;
   src: url("../assets/fonts/palanquin-v17-devanagari_latin_latin-ext-300.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Palanquin";
   font-style: normal;
   font-weight: 400;
   src: url("../assets/fonts/palanquin-v17-devanagari_latin_latin-ext-regular.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Palanquin";
   font-style: normal;
   font-weight: 500;
   src: url("../assets/fonts/palanquin-v17-devanagari_latin_latin-ext-500.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Palanquin";
   font-style: normal;
   font-weight: 600;
   src: url("../assets/fonts/palanquin-v17-devanagari_latin_latin-ext-600.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Palanquin";
   font-style: normal;
   font-weight: 700;
   src: url("../assets/fonts/palanquin-v17-devanagari_latin_latin-ext-700.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
-
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Palanquin Dark";
   font-style: normal;
   font-weight: 400;
   src: url("../assets/fonts/palanquin-dark-v17-devanagari_latin_latin-ext-regular.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Palanquin Dark";
   font-style: normal;
   font-weight: 500;
   src: url("../assets/fonts/palanquin-dark-v17-devanagari_latin_latin-ext-500.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Palanquin Dark";
   font-style: normal;
   font-weight: 600;
   src: url("../assets/fonts/palanquin-dark-v17-devanagari_latin_latin-ext-600.woff2")
-    format("woff2"); 
+    format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Palanquin Dark";
   font-style: normal;
   font-weight: 700;
   src: url("../assets/fonts/palanquin-dark-v17-devanagari_latin_latin-ext-700.woff2")
-    format("woff2"); 
+    format("woff2");
 }
-
-
 
 /* Header Section */
 .header_section {
@@ -241,7 +237,9 @@
   height: 2px;
   background-color: var(--color_white);
   border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .hamburger.is-open span:nth-child(1) {
@@ -255,8 +253,6 @@
 .hamburger.is-open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
-
-
 
 /* Hero Section */
 .hero {
@@ -306,7 +302,7 @@
   object-fit: cover;
   z-index: 2;
 
-  animation: hero_overlay_out 2s cubic-bezier(0.36, 0, 0.12, 1) 1.5s 1 forwards;
+  animation: hero_overlay_out 1.5s cubic-bezier(0.4, 0, 0.2, 1) 1.2s 1 both;
 }
 
 @keyframes hero_overlay_out {
@@ -332,24 +328,25 @@
   transform-origin: left center;
   opacity: 0;
 
-  animation: hero_overlay_half_in 3.9s cubic-bezier(0.34, 0, 0.12, 1) 1.5s 1 both;
+  animation: hero_overlay_half_in 2.4s cubic-bezier(0.34, 0, 0.12, 1) 1.2s 1
+    both;
 }
 
 @keyframes hero_overlay_half_in {
   0% {
-    transform: translateX(-3vw) scaleX(1.006);
+    transform: translateX(-3vw);
     opacity: 0;
   }
-  34% {
-    transform: translateX(0) scaleX(1);
+  30% {
+    transform: translateX(0);
     opacity: 1;
   }
-  72% {
-    transform: translateX(0) scaleX(1);
+  70% {
+    transform: translateX(0);
     opacity: 1;
   }
   100% {
-    transform: translateX(-9vw) scaleX(0.998);
+    transform: translateX(-8vw);
     opacity: 0;
   }
 }
@@ -368,16 +365,16 @@
   transform: translateX(0) scaleX(1);
   opacity: 0;
 
-  animation: hero_overlay_small_in 0.19s cubic-bezier(0.1, 0.01, 0.36, 1) 4.5s 1 forwards;
+  animation: hero_overlay_small_in 0.8s cubic-bezier(0.4, 0, 0.2, 1) 2.6s 1 both;
 }
 
 @keyframes hero_overlay_small_in {
   0% {
-    transform: translateX(0) scaleX(1);
+    transform: translateX(0.4vw);
     opacity: 0;
   }
   100% {
-    transform: translateX(0) scaleX(1);
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -393,7 +390,7 @@
   transform: translate(-50%, calc(-50% + 38px));
   opacity: 0;
 
-  animation: text_flow 3s cubic-bezier(0.36, 0, 0.12, 1) 0s 1 both;
+  animation: text_flow 2.4s cubic-bezier(0.36, 0, 0.12, 1) 0s 1 both;
 }
 
 @keyframes text_flow {
@@ -403,13 +400,13 @@
     opacity: 0;
   }
 
-  22% {
+  20% {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
   }
 
-  42% {
+  40% {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
@@ -429,12 +426,12 @@
   font-size: 3.75rem;
   color: var(--color_secondary_braun);
 
-  animation: h1_in 1.15s cubic-bezier(0.16, 1, 0.3, 1) 0s 1 both;
+  animation: h1_in 1s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 both;
 }
 
 @keyframes h1_in {
   0% {
-    transform: translateY(40%);
+    transform: translateY(30px);
     opacity: 0;
   }
   100% {
@@ -451,13 +448,13 @@
   color: var(--color_secondary_braun);
   line-height: 1em;
 
-  animation: p_in 1.25s cubic-bezier(0.16, 1, 0.3, 1) 0.5s 1 both;
+  animation: p_in 1s cubic-bezier(0.4, 0, 0.2, 1) 0.4s 1 both;
 }
 
 @keyframes p_in {
   0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(15px);
   }
   100% {
     opacity: 1;
@@ -484,16 +481,13 @@
     -5px 5px 4px rgba(3, 7, 18, 0.08);
   border-radius: 50%;
 
-  animation: badge_in 1.5s cubic-bezier(0.22, 1, 0.36, 1) 5s 1 both;
+  animation: badge_in 1s cubic-bezier(0.22, 1, 0.36, 1) 3s 1 both;
 }
 
 @keyframes badge_in {
   0% {
-    transform: translateY(250px);
+    transform: translateY(150px);
     opacity: 0;
-  }
-  60% {
-    opacity: 1;
   }
   100% {
     transform: translateY(-60px);
@@ -558,7 +552,6 @@ main > .faq_section,
 main > .contact_section {
   margin-top: var(--section-gap);
 }
-
 
 /* Highlights Section */
 .highlights_section {
@@ -706,8 +699,6 @@ main > .contact_section {
   background-color: var(--color_primary_yellow);
 }
 
-
-
 /* FAQ Section (Design system: accordion) */
 .faq_section {
   width: 100%;
@@ -818,7 +809,6 @@ main > .contact_section {
   background: var(--color_white);
   border-radius: 5px;
 }
-
 
 /* Contact Section */
 .contact_section {
@@ -1011,8 +1001,6 @@ main > .contact_section {
   display: block;
 }
 
-
-
 /* Footer Section */
 .footer_section {
   width: 100%;
@@ -1083,4 +1071,3 @@ main > .contact_section {
   height: 32px;
   object-fit: contain;
 }
-
