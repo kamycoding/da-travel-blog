@@ -173,7 +173,8 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 32px 0;
+  height: 128px;
+  padding: 0;
   gap: 102px;
 }
 
@@ -440,6 +441,7 @@
   font-weight: 700;
   font-size: 3.75rem;
   color: var(--color_secondary_braun);
+  line-height: 1.1;
 
   animation: h1_in 1s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 both;
 }
@@ -714,7 +716,7 @@ main > .contact_section {
   background-color: var(--color_primary_yellow);
 }
 
-/* FAQ Section (Design system: accordion) */
+/* FAQ Section */
 .faq_section {
   width: 100%;
 }
@@ -1079,10 +1081,25 @@ main > .contact_section {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  transition: transform 180ms ease;
 }
 
 .footer_socials img {
   width: 32px;
   height: 32px;
   object-fit: contain;
+  transition:
+    opacity 180ms ease,
+    filter 180ms ease;
+}
+
+.footer_socials a:hover,
+.footer_socials a:focus-visible {
+  transform: translateY(-1px);
+}
+
+.footer_socials a:hover img,
+.footer_socials a:focus-visible img {
+  opacity: 0.92;
+  filter: brightness(1.08);
 }
