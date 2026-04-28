@@ -1302,8 +1302,8 @@
   }
 
   .travel_badge {
-    left: auto;
-    right: 150px;
+    left: 90px;
+    right: auto;
     bottom: 235px;
     width: 160px;
     height: 160px;
@@ -1342,8 +1342,8 @@
   }
 
   .travel_badge {
-    left: auto;
-    right: 150px;
+    left: 90px;
+    right: auto;
     bottom: 235px;
     width: 160px;
     height: 160px;
@@ -1382,8 +1382,8 @@
   }
 
   .travel_badge {
-    left: auto;
-    right: 150px;
+    left: 90px;
+    right: auto;
     bottom: 235px;
     width: 160px;
     height: 160px;
@@ -1541,7 +1541,7 @@
     transform: translateY(42px) scale(0.96);
   }
 
-  88% {
+  94% {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
