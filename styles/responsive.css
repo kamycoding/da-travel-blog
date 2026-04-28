@@ -186,11 +186,6 @@
     font-size: 1.45rem;
   }
 
-  /* Highlights */
-  .highlights_section {
-    padding: 80px 0;
-  }
-
   .highlights_slider {
     margin: 0 95px;
     width: auto;
@@ -204,11 +199,6 @@
 
   .highlights_intro {
     margin-bottom: 64px;
-  }
-
-  /* FAQ */
-  .faq_section {
-    padding: 80px 0;
   }
 
   .faq_container {
@@ -348,11 +338,6 @@
   .travel_badge__flag {
     width: 40px;
     height: 40px;
-  }
-
-  /* Highlights */
-  .highlights_section {
-    padding: 64px 0;
   }
 
   .highlights_slider {
