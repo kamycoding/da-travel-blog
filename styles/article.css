@@ -173,11 +173,11 @@
     line-height: 120%;
 }
 
-.list_section > ol{
+.list_section > ol {
     list-style-type: decimal;
 }
 
-.list_section > ol > li{
+.list_section ol > li {
     padding-left: 10px;
     margin-left: 40px;
 }
@@ -312,3 +312,4 @@
     height: 35px;
     transform: translate(10px,10px);
 }
+
