@@ -244,7 +244,7 @@
   line-height: 120%;
   color: var(--color_secondary_braun);
   gap: 48px;
-  width: min(55%, 493px);
+  width: min(55%, 800px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -268,7 +268,6 @@
   width: 260px;
   height: 56px;
   position: relative;
-  overflow: hidden;
 }
 
 .share_btn {

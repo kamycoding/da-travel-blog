@@ -1987,7 +1987,7 @@
 
   .article_max,
   .share_section {
-    gap: 48px;
+    gap: 25px;
   }
 
   .article_max,
@@ -2043,7 +2043,18 @@
   .article_max, .eyebrow {
     line-height: 1.25rem;
   }
+
+  .share_hidden {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 8px;
+  }
+
+  .share_hidden > :first-child {
+  grid-column: span 2;
 }
+}
+
 
 @media screen and (min-width: 1440px) {
   
@@ -2071,9 +2082,5 @@
   .article_text {
     padding: 0 max(146px, calc(50% - 660px));
     padding-top: 88px;
-  }
-
-  .share_section {
-    padding: 0 max(146px, calc(50% - 660px));
   }
 }
