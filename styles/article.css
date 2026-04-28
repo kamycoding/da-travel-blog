@@ -100,7 +100,7 @@
 }
 
 .slider_section > h2{
-    padding-bottom: 110px;
+    padding: 120px 0px 88px 0px;
     display: flex;
     justify-content: center;
     font-family: "Arima";
@@ -118,8 +118,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0;
-    overflow: hidden;
+  overflow: visible;
 }
 
 .slider_element {
