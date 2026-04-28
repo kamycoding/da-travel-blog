@@ -310,6 +310,7 @@
   width: 100%;
   margin-bottom: 88px;
   padding: 0 135px;
+  overflow-x: clip;
 }
 
 .article_kamy_tips_badge {
@@ -632,7 +633,7 @@
 
   .article_kamy_tips_badge {
     top: -48px;
-    left: -4px;
+    left: 0;
     width: 190px;
   }
 
@@ -749,7 +750,7 @@
 
   .article_kamy_tips_badge {
     top: -40px;
-    left: -6px;
+    left: 0;
     width: 155px;
   }
 

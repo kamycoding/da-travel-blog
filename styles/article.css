@@ -1,7 +1,14 @@
-﻿.page_hero {
+﻿body:has(.page_hero) main {
+    width: min(100% - 240px, 1200px);
+    margin-inline: auto;
+    padding-block: 80px;
+}
+
+.page_hero {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    overflow-x: clip;
 }
 
 .eyebrow {
@@ -102,13 +109,17 @@
     color: var(--color_secondary_braun);
 }
 
+.slider_section {
+    overflow-x: clip;
+}
+
 .slider {
   height: clamp(240px, 32vw, 350px);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0;
-  overflow: visible;
+    overflow: hidden;
 }
 
 .slider_element {
@@ -205,6 +216,7 @@
     font-size: 1.5rem;
     color: var(--color_p_gray);
     line-height: 120%;
+    overflow-x: clip;
 }
 
 .tipps_section img {
@@ -240,18 +252,20 @@
     line-height: 120%;
     color: var(--color_secondary_braun);
     gap: 48px;
-    width: 55%;
+    width: min(55%, 493px);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin:0 auto;
+    margin: 0 auto;
     padding-bottom: 88px;
+    overflow: visible;
 }
 
 .share_text{
     max-width: 493px;
     min-width: 280px;
+    width: 100%;
 }
 
 .share_text > img {
@@ -264,6 +278,7 @@
     width: 260px;
   height: 56px;
     position: relative;
+        overflow: hidden;
 }
 
 .share_btn{
