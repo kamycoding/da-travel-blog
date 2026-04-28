@@ -1568,7 +1568,8 @@
 }
 
 /* =========================
-   Article Max Responsive
+  Article Max Responsive
+  ========================= */
 
 .article_max_page {
   overflow-x: clip;
@@ -2101,7 +2102,8 @@
     transform: none;
   }
 
-  .article_max, .slider_section > h2 {
+  .article_max,
+  .slider_section > h2 {
     font-size: 1.25rem;
     padding-bottom: 32px;
     text-align: center;
@@ -2183,38 +2185,40 @@
 }
 
 @media screen and (max-width: 354px) {
-  .article_max, .share_text > img {
+  .article_max,
+  .share_text > img {
     scale: 0.5;
     transform: translate(-30px, 320px);
   }
 
-  .article_max, .share_section p {
+  .article_max,
+  .share_section p {
     min-width: 310px;
     font-size: 1.125rem;
   }
 
-  .article_max, .slider_section > h2 {
+  .article_max,
+  .slider_section > h2 {
     line-height: 1.25rem;
   }
 
-  .article_max, .eyebrow {
+  .article_max,
+  .eyebrow {
     line-height: 1.25rem;
   }
 
   .share_hidden {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  row-gap: 8px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 8px;
   }
 
   .share_hidden > :first-child {
-  grid-column: span 2;
+    grid-column: span 2;
+  }
 }
-}
-
 
 @media screen and (min-width: 1440px) {
-  
   /* Article */
 
   .page_hero {
