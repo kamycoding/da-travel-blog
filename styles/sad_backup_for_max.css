@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+.header_inner {
+    height: 70px;
+    justify-content: center;
+    gap: 0;
+  }
+}
