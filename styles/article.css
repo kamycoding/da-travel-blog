@@ -295,13 +295,13 @@
     opacity 300ms ease;
 }
 
-#share_toggle:checked ~ .share_hidden {
+.share_toggle:checked ~ .share_hidden {
   opacity: 1;
   pointer-events: auto;
   transform: translateX(0);
 }
 
-#share_toggle:checked ~ .share_btn {
+.share_toggle:checked ~ .share_btn {
   opacity: 0;
   pointer-events: none;
   transform: translateX(-120%);

@@ -242,28 +242,46 @@
           </div>
         </section>
 
-        <section class="article_kamy_share_section">
-          <p class="article_kamy_share_text">
-            Follow me for more content like this, and share the article with
-            your friends!
-          </p>
+        <section class="share_section">
+          <div class="share_text">
+            <img src="./assets/icons/article_icons/share_arrow.svg" alt="" />
+            <p>
+              Follow me for more content like this, and share the article with
+              your friends!
+            </p>
+          </div>
 
-          <div class="article_kamy_share_action">
-            <img
-              class="article_kamy_share_arrow"
-              src="./assets/icons/article_icons/share_arrow.svg"
-              alt=""
-              aria-hidden="true"
+          <div class="share_wrapper">
+            <input
+              class="share_toggle"
+              type="checkbox"
+              id="kamy_share_toggle"
+              hidden
             />
-
-            <a href="#" class="article_kamy_share_button">
+            <label for="kamy_share_toggle" class="share_btn">
               <img
-                src="./assets/icons/article_icons/yellow_share_icon.svg"
-                alt=""
-                aria-hidden="true"
+                src="./assets/icons/article_icons/share_button_logo.svg"
+                alt="Share Button"
               />
-              <span>Share</span>
-            </a>
+            </label>
+
+            <div class="share_hidden">
+              <img
+                src="./assets/icons/article_icons/share_button.svg"
+                alt="Share Button"
+              />
+              <img
+                class="share_links_logo"
+                src="./assets/icons/article_icons/share.svg"
+                alt="Share Logo"
+              />
+              <div class="share_links">
+                <a href="https://de.linkedin.com/" target="_blank">LinkedIn</a>
+                <a href="https://www.whatsapp.com/?lang=de" target="_blank">
+                  WhatsApp
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </article>
