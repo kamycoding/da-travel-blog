@@ -1,7 +1,9 @@
 const hamburger = document.querySelector(".hamburger");
-const menu = document.getElementById("header-menu");
+const menu = document.getElementById("header-menu") || document.querySelector(".header_links");
 
 if (hamburger && menu) {
+  hamburger.setAttribute("aria-expanded", hamburger.getAttribute("aria-expanded") || "false");
+
   hamburger.addEventListener("click", () => {
     const isOpen = hamburger.getAttribute("aria-expanded") === "true";
 
