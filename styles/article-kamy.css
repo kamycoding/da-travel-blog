@@ -307,11 +307,11 @@
 
 .article_kamy_tips_badge {
   position: absolute;
-  top: -67px;
+  top: -73px;
   left: 51px;
   width: 250px;
   z-index: 2;
-  transform: rotate(-12deg);
+  transform: rotate(-2deg);
 }
 
 .article_kamy_tips_box {
@@ -616,11 +616,12 @@
 
   .article_kamy_tips {
     padding: 0;
+    margin-top: 96px;
     margin-bottom: 80px;
   }
 
   .article_kamy_tips_badge {
-    top: -48px;
+    top: -56px;
     left: 0;
     width: 190px;
   }
@@ -737,7 +738,7 @@
   }
 
   .article_kamy_tips_badge {
-    top: -40px;
+    top: -46px;
     left: 0;
     width: 155px;
   }

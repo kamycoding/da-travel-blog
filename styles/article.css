@@ -61,7 +61,11 @@
   flex-direction: column;
   align-items: center;
   color: var(--color_secondary_braun);
+  text-align: center;
   font-family: "Arima";
+  background-color: rgba(78, 164, 135, 0.2);
+  padding: 16px;
+  border-radius: 30px;
 }
 
 .author > h3 {
@@ -116,22 +120,26 @@
 }
 
 .slider_element {
+  position: relative;
   width: clamp(130px, 16vw, 300px);
   height: clamp(190px, 28vw, 440px);
   border-radius: 16px;
-  overflow: hidden;
+  overflow: visible;
   flex-shrink: 0;
-
-  box-shadow:
-    -1px 1px 1px rgba(3, 7, 18, 0.02),
-    -6px 5px 4px rgba(3, 7, 18, 0.03),
-    -13px 12px 9px rgba(3, 7, 18, 0.05),
-    -24px 20px 15px rgba(3, 7, 18, 0.06),
-    -37px 32px 24px rgba(3, 7, 18, 0.08);
 
   transform: perspective(400px) rotateY(12deg) translateX(32px);
   transform-origin: center;
   transition: all 250ms ease-in-out;
+}
+
+.slider_element::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  box-shadow: 0 18px 42px rgba(3, 7, 18, 0.12);
+  pointer-events: none;
 }
 
 .slider_element:not(:first-child) {
@@ -143,6 +151,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: inherit;
 }
 
 .slider_element:hover {
@@ -227,6 +236,54 @@
 .useful_link {
   color: var(--color_primary_green);
   font-weight: 700;
+}
+
+.article_max_tips {
+  position: relative;
+  width: min(85%, 1200px);
+  margin: 128px auto 88px;
+  padding: 0;
+  overflow-x: clip;
+}
+
+.article_max_tips .article_max_tips_badge {
+  position: absolute;
+  top: -99px;
+  left: 10px;
+  width: 250px;
+  z-index: 2;
+  transform: rotate(6deg);
+}
+
+.article_max_tips_box {
+  width: 100%;
+  min-height: 200px;
+  background-color: rgba(78, 164, 135, 0.2);
+  border-radius: 10px;
+  padding: 48px 32px;
+}
+
+.article_max_tips_list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 28px;
+}
+
+.article_max_tips .article_max_tips_list > li {
+  margin-left: 0;
+  padding-left: 0;
+  color: var(--color_p_gray);
+  font-family: "Palanquin", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.article_max_tips_link {
+  color: var(--color_primary_green);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .article_text {
