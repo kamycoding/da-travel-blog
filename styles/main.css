@@ -823,7 +823,7 @@ main > .contact_section {
 }
 
 .faq_item.is_open .faq_icon img {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
 }
 
 .faq_answer {
