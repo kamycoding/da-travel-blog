@@ -1,0 +1,23 @@
+{
+  "name": "da-travel-blog",
+  "version": "1.0.0",
+  "description": "Initial project structure is ready.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamycoding/da-travel-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamycoding/da-travel-blog/issues"
+  },
+  "homepage": "https://github.com/kamycoding/da-travel-blog#readme",
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}
