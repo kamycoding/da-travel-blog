@@ -1,4 +1,4 @@
-﻿/* Font Face */
+﻿/* Fonts */
 @font-face {
   font-display: swap;
   font-family: "Arima";
@@ -161,7 +161,7 @@
     format("woff2");
 }
 
-/* Header Section */
+/* Header */
 .header_section {
   width: 100%;
   background-color: var(--color_primary_green);
@@ -256,7 +256,7 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
   position: relative;
   height: 515px;
@@ -464,7 +464,7 @@
   font-weight: 500;
   font-size: 1.75rem;
   color: var(--color_secondary_braun);
-  line-height: 1em;
+  line-height: 1.18;
 
   animation: p_in 1s cubic-bezier(0.4, 0, 0.2, 1) 0.4s 1 both;
 }
@@ -561,18 +561,31 @@
 }
 
 main {
-  --section-gap: 120px;
-  margin-bottom: var(--section-gap);
+  --hero-to-highlights-gap: 88px;
+  --home-section-gap: 120px;
+  --contact-to-footer-gap: 128px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--contact-to-footer-gap);
   overflow-x: clip;
 }
 
 main > .highlights_section,
 main > .faq_section,
 main > .contact_section {
-  margin-top: var(--section-gap);
+  margin: 0;
 }
 
-/* Highlights Section */
+main > .highlights_section {
+  margin-top: var(--hero-to-highlights-gap);
+}
+
+main > .faq_section,
+main > .contact_section {
+  margin-top: var(--home-section-gap);
+}
+
+/* Highlights */
 .highlights_section {
   width: 100%;
   overflow-x: hidden;
@@ -630,12 +643,14 @@ main > .contact_section {
   margin: 0 auto;
   overflow: hidden;
   overflow-x: hidden;
+  contain: paint;
 }
 
 .highlights_track {
   width: 100%;
   display: flex;
   transition: opacity 800ms ease;
+  will-change: transform;
 }
 
 .highlights_track.is-hidden {
@@ -645,10 +660,13 @@ main > .contact_section {
 .highlight_slide {
   position: relative;
   width: 100%;
+  min-width: 100%;
   flex-shrink: 0;
   aspect-ratio: 1200 / 533;
   overflow: hidden;
   border-top-right-radius: 100px;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .highlight_slide_image {
@@ -721,7 +739,7 @@ main > .contact_section {
   background-color: var(--color_primary_yellow);
 }
 
-/* FAQ Section */
+/* FAQ */
 .faq_section {
   width: 100%;
   overflow-x: hidden;
@@ -833,7 +851,7 @@ main > .contact_section {
   border-radius: 5px;
 }
 
-/* Contact Section */
+/* Contact */
 .contact_section {
   width: 100%;
   overflow-x: hidden;
@@ -1025,7 +1043,7 @@ main > .contact_section {
   display: block;
 }
 
-/* Footer Section */
+/* Footer */
 .footer_section {
   width: 100%;
   background-color: var(--color_primary_green);
