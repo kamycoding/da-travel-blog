@@ -669,6 +669,14 @@ main > .contact_section {
   transform: translateZ(0);
 }
 
+.highlight_slide_link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
 .highlight_slide_image {
   width: 100%;
   height: 100%;
