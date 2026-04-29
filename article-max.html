@@ -170,6 +170,34 @@
             />
           </div>
         </div>
+        <div class="article_slider_dots" aria-label="Beach destination slider navigation">
+          <button
+            class="article_slider_dot is-active"
+            type="button"
+            aria-label="Go to beach destination 1"
+            aria-current="true"
+          ></button>
+          <button
+            class="article_slider_dot"
+            type="button"
+            aria-label="Go to beach destination 2"
+          ></button>
+          <button
+            class="article_slider_dot"
+            type="button"
+            aria-label="Go to beach destination 3"
+          ></button>
+          <button
+            class="article_slider_dot"
+            type="button"
+            aria-label="Go to beach destination 4"
+          ></button>
+          <button
+            class="article_slider_dot"
+            type="button"
+            aria-label="Go to beach destination 5"
+          ></button>
+        </div>
         <p>
           Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
           malesuada. Ante in commodo porta scelerisque turpis gravida semper.
@@ -215,14 +243,19 @@
       </section>
 
       <!-- Tips -->
-      <section class="tipps_section">
-        <div>
-          <img src="./assets/icons/article_icons/pro_tipps.svg" alt="" />
-          <ol class="tipps_list">
+      <section class="article_max_tips">
+        <img
+          class="article_max_tips_badge"
+          src="./assets/icons/article_icons/pro_tipps.svg"
+          alt="Pro tips"
+        />
+
+        <div class="article_max_tips_box">
+          <ol class="article_max_tips_list">
             <li>
               Ante in commodo porta scelerisque turpis gravida semper.
               <a
-                class="useful_link"
+                class="article_max_tips_link"
                 href="https://letmegooglethat.com/?q=useful+link"
                 target="_blank"
                 >Useful link.</a
@@ -349,6 +382,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/article-max.js" defer></script>
   </body>
 </html>
 
